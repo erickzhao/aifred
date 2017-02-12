@@ -1,3 +1,67 @@
-body {
-    color: green;
+.nav {
+    color: white;
+}
+
+.clear-nav {
+    background: none;
+    border: none;
+}
+
+.dark-nav {
+    -webkit-transition: ease-in 0.2s all;
+    transition: linear ease-in 0.2s all;
+}
+
+#hero {
+    .video-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%; 
+        overflow: hidden;
+
+        video {
+            /* Make video to at least 100% wide and tall */
+            min-width: 100%; 
+            min-height: 100%; 
+            
+            /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+            width: auto;
+            height: auto;
+            
+            /* Center the video */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    .overlay {
+        @extend .video-container;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,0.3);
+
+        color: white;
+        font-family: 'Raleway', sans-serif;
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 84pt;
+            margin-bottom: 0px;
+        }
+
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            font-size: 18pt;
+            margin-top: 0px;
+        }
+    }
 }
