@@ -1,18 +1,70 @@
-.nav {
-    color: white;
+/* Color Scheme variables */
+$red:           rgba(255, 86, 86, 1);
+$blue-light:    rgba(0, 191, 255, 1);
+$blue-medium:   rgba(0, 91, 140, 1);
+$blue-dark:     rgba(0, 0, 22, 1);
+$grey-white:    rgba(249, 251, 255, 1);
+
+//General styling
+
+body {
+    background-color: $grey-white;
+}
+a {
+    color: $blue-light;
+    &:hover, &:active, &:focus {
+        color: $blue-medium;
+        outline: 0;
+    } 
+    transition: all 0.2s ease-in;
 }
 
-.clear-nav {
-    background: none;
-    border: none;
+.btn {
+    transition: all 0.2s ease-in;
+    &.btn-default {
+        border-radius: 20px;
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+
+        &:hover, &:focus, &:active {
+            background-color: white;
+            color: $blue-dark;
+            outline: 0;
+        }
+
+        &:highlight {
+            background: transparent;
+        }
+    }
 }
 
-.dark-nav {
-    -webkit-transition: ease-in 0.2s all;
-    transition: linear ease-in 0.2s all;
-}
+/* NAVBAR */
+nav {
+    .navbar-inverse {
+        border: transparent;
+    }
 
+    &.clear-nav {
+        background: none;
+        border: none;
+    }
+
+    &.dark-nav {
+        -webkit-transition: ease-in 0.2s all;
+        transition: linear ease-in 0.2s all;
+    }
+
+    .nav.navbar-nav.navbar-right li a,
+    .navbar-header .navbar-brand {
+        color: $grey-white;
+    }  
+}
+/* END NAVBAR */
+
+/* HERO IMAGE */
 #hero {
+    //bg video
     .video-container {
         position: absolute;
         top: 0;
@@ -37,7 +89,7 @@
             transform: translate(-50%,-50%);
         }
     }
-
+    //overlay elements
     .overlay {
         @extend .video-container;
         
@@ -45,23 +97,70 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgba(0,0,0,0.3);
+        background: rgba($blue-medium,0.3);
 
-        color: white;
+        color: $grey-white;
         font-family: 'Raleway', sans-serif;
 
-        h1 {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 700;
-            font-size: 84pt;
-            margin-bottom: 0px;
-        }
+        //title
+        .title {
+            margin-bottom: 100px;
+            h1 {
+                font-weight: 700;
+                font-size: 84pt;
+                margin-bottom: 0px;
+            }
 
-        h2 {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 100;
-            font-size: 18pt;
-            margin-top: 0px;
+            h2 {
+                font-weight: 100;
+                font-size: 18pt;
+                margin-top: 0px;
+            }
         }
     }
 }
+/* END HERO IMAGE */
+
+/* MAIN BODY */
+#main-body {
+
+    text-align: center;
+
+    h1,h2,h3,h4,h5,h6 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        margin-top: 0px;
+        display: inline-block;
+        border-bottom: 3px solid $blue-dark;
+        padding-bottom: 10px;
+    }
+    margin: 0 auto;
+    margin-top: calc(100vh + 80px);
+    color: white;
+
+    p {
+        margin: 0 auto;
+        padding: 30px;
+        width: 900px;
+        text-align: justify;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12pt;
+        line-height: 2;
+    }
+
+    .body-section {
+        margin: 0;
+        padding: 75px 20px 40px 75px;
+        &:nth-child(4n-2) {
+            background-color: $red;
+        }
+        &:nth-child(4n-4) {
+            background-color: $blue-light;
+        }
+        &:nth-child(2n-1) {
+            background-color: $grey-white;
+            color: $blue-dark;
+        }
+    }
+}
+/* END MAIN BODY */

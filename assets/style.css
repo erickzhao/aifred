@@ -1,14 +1,43 @@
-.nav {
-  color: white; }
+/* Color Scheme variables */
+body {
+  background-color: #f9fbff; }
 
-.clear-nav {
+a {
+  color: deepskyblue;
+  transition: all 0.2s ease-in; }
+  a:hover, a:active, a:focus {
+    color: #005b8c;
+    outline: 0; }
+
+.btn {
+  transition: all 0.2s ease-in; }
+  .btn.btn-default {
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white; }
+    .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
+      background-color: white;
+      color: #000016;
+      outline: 0; }
+    .btn.btn-default:highlight {
+      background: transparent; }
+
+/* NAVBAR */
+nav .navbar-inverse {
+  border: transparent; }
+nav.clear-nav {
   background: none;
   border: none; }
-
-.dark-nav {
+nav.dark-nav {
   -webkit-transition: ease-in 0.2s all;
   transition: linear ease-in 0.2s all; }
+nav .nav.navbar-nav.navbar-right li a,
+nav .navbar-header .navbar-brand {
+  color: #f9fbff; }
 
+/* END NAVBAR */
+/* HERO IMAGE */
 #hero .video-container, #hero .overlay {
   position: absolute;
   top: 0;
@@ -33,18 +62,53 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
+  background: rgba(0, 91, 140, 0.3);
+  color: #f9fbff;
   font-family: 'Raleway', sans-serif; }
-  #hero .overlay h1 {
+  #hero .overlay .title {
+    margin-bottom: 100px; }
+    #hero .overlay .title h1 {
+      font-weight: 700;
+      font-size: 84pt;
+      margin-bottom: 0px; }
+    #hero .overlay .title h2 {
+      font-weight: 100;
+      font-size: 18pt;
+      margin-top: 0px; }
+
+/* END HERO IMAGE */
+/* MAIN BODY */
+#main-body {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: calc(100vh + 80px);
+  color: white; }
+  #main-body h1, #main-body h2, #main-body h3, #main-body h4, #main-body h5, #main-body h6 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 84pt;
-    margin-bottom: 0px; }
-  #hero .overlay h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    font-size: 18pt;
-    margin-top: 0px; }
+    font-weight: 600;
+    margin-top: 0px;
+    display: inline-block;
+    border-bottom: 3px solid #000016;
+    padding-bottom: 10px; }
+  #main-body p {
+    margin: 0 auto;
+    padding: 30px;
+    width: 900px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    line-height: 2; }
+  #main-body .body-section {
+    margin: 0;
+    padding: 75px 20px 40px 75px; }
+    #main-body .body-section:nth-child(4n-2) {
+      background-color: #ff5656; }
+    #main-body .body-section:nth-child(4n-4) {
+      background-color: deepskyblue; }
+    #main-body .body-section:nth-child(2n-1) {
+      background-color: #f9fbff;
+      color: #000016; }
+
+/* END MAIN BODY */
 
 /*# sourceMappingURL=style.css.map */
