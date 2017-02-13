@@ -5,8 +5,8 @@ body {
 
 a {
   color: deepskyblue;
-  -webkit-transition: ease-in 0.3s all;
-  transition: linear ease-in 0.3s all; }
+  -webkit-transition: ease-in 0.3s;
+  transition: linear ease-in 0.3s; }
   a:hover, a:active, a:focus, a.btn.btn-default:hover, a.btn.btn-default:active {
     color: #005b8c;
     outline: 0; }
@@ -36,7 +36,13 @@ nav {
   transition: linear ease-in 0.3s all; }
   nav .navbar {
     min-height: 80px; }
-  nav .navbar-brand {
+  nav .navbar-header button.navbar-toggle {
+    padding: 25px 15px; }
+    nav .navbar-header button.navbar-toggle:active, nav .navbar-header button.navbar-toggle:hover, nav .navbar-header button.navbar-toggle:focus, nav .navbar-header button.navbar-toggle.btn.btn-default:hover, nav .navbar-header button.navbar-toggle.btn.btn-default:active {
+      background: #f9fbff; }
+    nav .navbar-header button.navbar-toggle .icon-bar {
+      background: #111c35; }
+  nav .navbar-header .navbar-brand {
     font-size: 30pt; }
   nav .nav.navbar-nav.navbar-right li a,
   nav .navbar-header .navbar-brand {
