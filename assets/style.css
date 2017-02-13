@@ -5,38 +5,54 @@ body {
 
 a {
   color: deepskyblue;
-  transition: all 0.2s ease-in; }
-  a:hover, a:active, a:focus {
+  transition: all 0.3s ease-in all; }
+  a:hover, a:active, a:focus, a.btn.btn-default:hover, a.btn.btn-default:active {
     color: #005b8c;
     outline: 0; }
 
-/* END GENERAL STYLING */
 .btn {
-  transition: all 0.2s ease-in; }
+  transition: all 0.3s ease-in all; }
   .btn.btn-default {
     border-radius: 20px;
     background: transparent;
     border: 2px solid white;
     color: white; }
-    .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
-      background-color: white;
-      color: #000016;
+    .btn.btn-default:focus, .btn.btn-default:hover, .btn.btn-default:active {
       outline: 0; }
+    .btn.btn-default:hover, .btn.btn-default:active {
+      background-color: white;
+      color: #111c35; }
     .btn.btn-default:highlight {
       background: transparent; }
 
+/* END GENERAL STYLING */
 /* NAVBAR */
-nav .navbar-inverse {
-  border: transparent; }
-nav.clear-nav {
-  background: none;
-  border: none; }
-nav.dark-nav {
-  -webkit-transition: ease-in 0.2s all;
-  transition: linear ease-in 0.2s all; }
-nav .nav.navbar-nav.navbar-right li a,
-nav .navbar-header .navbar-brand {
-  color: #f9fbff; }
+nav {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: ease-in 0.3s all;
+  transition: linear ease-in 0.3s all; }
+  nav .navbar {
+    min-height: 80px; }
+  nav .navbar-brand {
+    font-size: 30pt; }
+  nav .nav.navbar-nav.navbar-right li a,
+  nav .navbar-header .navbar-brand {
+    padding: 0 30px;
+    height: 80px;
+    line-height: 80px;
+    color: #f9fbff;
+    font-weight: 600; }
+  nav.clear-nav {
+    background: none;
+    border: transparent; }
+  nav.dark-nav {
+    box-shadow: 0 10px 6px -6px #999;
+    background: #f9fbff;
+    border: transparent; }
+    nav.dark-nav .nav.navbar-nav.navbar-right li a,
+    nav.dark-nav .navbar-header .navbar-brand {
+      color: #111c35; }
 
 /* END NAVBAR */
 /* HERO IMAGE */
@@ -90,7 +106,7 @@ nav .navbar-header .navbar-brand {
     font-weight: 600;
     margin-top: 0px;
     display: inline-block;
-    border-bottom: 3px solid #000016;
+    border-bottom: 3px solid #111c35;
     padding-bottom: 10px; }
   #main-body p {
     margin: 0 auto;
@@ -102,14 +118,14 @@ nav .navbar-header .navbar-brand {
     line-height: 2; }
   #main-body .body-section {
     margin: 0;
-    padding: 75px 40px 75px 40px; }
+    padding: 75px 40px; }
     #main-body .body-section:nth-child(4n-2) {
       background-color: #ff5656; }
     #main-body .body-section:nth-child(4n-4) {
       background-color: deepskyblue; }
     #main-body .body-section:nth-child(2n-1) {
       background-color: #f9fbff;
-      color: #000016; }
+      color: #111c35; }
 
 /* END MAIN BODY */
 

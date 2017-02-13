@@ -1,13 +1,16 @@
 $(document).ready(function(){
 
+    var minScroll = 300;
+    var minWidth = 768;
+
     //if screen is narrow on document load, load dark navbar
-    if ($(window).width() < 768) {
+    if ($(window).width() < minWidth) {
         addDark();
     }
 
     //toggle between clear and dark navbars depending on screen width and position
     $(window).resize(function() {
-        if ($(window).width() < 768 || $(window).scrollTop() >= 100) { //if scrolled down or narrow screen, add dark navbar
+        if ($(window).width() < minWidth || $(window).scrollTop() >= minScroll) { //if scrolled down or narrow screen, add dark navbar
             addDark();
         } else {
             removeDark();
@@ -18,7 +21,7 @@ $(document).ready(function(){
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 100 || $(window).width() < 768) {
+        if (scroll >= minScroll || $(window).width() < minWidth) {
             addDark();
         } else {
             removeDark();

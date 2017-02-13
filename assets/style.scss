@@ -2,7 +2,7 @@
 $red:           rgba(255, 86, 86, 1);
 $blue-light:    rgba(0, 191, 255, 1);
 $blue-medium:   rgba(0, 91, 140, 1);
-$blue-dark:     rgba(0, 0, 22, 1);
+$blue-dark:     rgba(17, 28, 53, 1);
 $grey-white:    rgba(249, 251, 255, 1);
 
 /* GENERAL STYLING */
@@ -16,23 +16,25 @@ a {
         color: $blue-medium;
         outline: 0;
     } 
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in all;
 }
 
-/* END GENERAL STYLING */
-
 .btn {
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in all;
     &.btn-default {
         border-radius: 20px;
         background: transparent;
         border: 2px solid white;
         color: white;
 
-        &:hover, &:focus, &:active {
+        &:focus {
+            outline: 0;
+        }
+
+        &:hover, &:active {
+            @extend :focus;
             background-color: white;
             color: $blue-dark;
-            outline: 0;
         }
 
         &:highlight {
@@ -41,26 +43,46 @@ a {
     }
 }
 
+/* END GENERAL STYLING */
+
 /* NAVBAR */
 nav {
-    .navbar-inverse {
-        border: transparent;
-    }
 
-    &.clear-nav {
-        background: none;
-        border: none;
-    }
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    -webkit-transition: ease-in 0.3s all;
+    transition: linear ease-in 0.3s all;
 
-    &.dark-nav {
-        -webkit-transition: ease-in 0.2s all;
-        transition: linear ease-in 0.2s all;
+    .navbar {
+        min-height: 80px;
+    }
+    .navbar-brand {
+        font-size: 30pt;
     }
 
     .nav.navbar-nav.navbar-right li a,
     .navbar-header .navbar-brand {
+        padding: 0 30px;
+        height: 80px;
+        line-height: 80px;
         color: $grey-white;
+        font-weight: 600;
     }  
+
+    &.clear-nav {
+        background: none;
+        border: transparent;
+    }
+    
+    &.dark-nav {
+        box-shadow: 0 10px 6px -6px #999;
+        .nav.navbar-nav.navbar-right li a,
+        .navbar-header .navbar-brand {
+            color: $blue-dark;
+        }
+        background: $grey-white;
+        border: transparent;
+    }
 }
 /* END NAVBAR */
 
@@ -125,9 +147,8 @@ nav {
 
 /* MAIN BODY */
 #main-body {
-
     text-align: center;
-
+    
     h1,h2,h3,h4,h5,h6 {
         font-family: 'Raleway', sans-serif;
         font-weight: 600;
@@ -152,7 +173,7 @@ nav {
 
     .body-section {
         margin: 0;
-        padding: 75px 40px 75px 40px;
+        padding: 75px 40px;
         &:nth-child(4n-2) {
             background-color: $red;
         }
