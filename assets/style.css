@@ -1,4 +1,5 @@
 /* Color Scheme variables */
+/* GENERAL STYLING */
 body {
   background-color: #f9fbff; }
 
@@ -9,6 +10,7 @@ a {
     color: #005b8c;
     outline: 0; }
 
+/* END GENERAL STYLING */
 .btn {
   transition: all 0.2s ease-in; }
   .btn.btn-default {
@@ -93,14 +95,14 @@ nav .navbar-header .navbar-brand {
   #main-body p {
     margin: 0 auto;
     padding: 30px;
-    width: 900px;
+    max-width: 900px;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
     font-size: 12pt;
     line-height: 2; }
   #main-body .body-section {
     margin: 0;
-    padding: 75px 20px 40px 75px; }
+    padding: 75px 40px 75px 40px; }
     #main-body .body-section:nth-child(4n-2) {
       background-color: #ff5656; }
     #main-body .body-section:nth-child(4n-4) {
