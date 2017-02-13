@@ -16,11 +16,13 @@ a {
         color: $blue-medium;
         outline: 0;
     } 
-    transition: all 0.3s ease-in all;
+    -webkit-transition: ease-in 0.3s all;
+    transition: linear ease-in 0.3s all;
 }
 
 .btn {
-    transition: all 0.3s ease-in all;
+    -webkit-transition: ease-in 0.3s all;
+    transition: linear ease-in 0.3s all;
     &.btn-default {
         border-radius: 20px;
         background: transparent;

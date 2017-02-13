@@ -5,13 +5,15 @@ body {
 
 a {
   color: deepskyblue;
-  transition: all 0.3s ease-in all; }
+  -webkit-transition: ease-in 0.3s all;
+  transition: linear ease-in 0.3s all; }
   a:hover, a:active, a:focus, a.btn.btn-default:hover, a.btn.btn-default:active {
     color: #005b8c;
     outline: 0; }
 
 .btn {
-  transition: all 0.3s ease-in all; }
+  -webkit-transition: ease-in 0.3s all;
+  transition: linear ease-in 0.3s all; }
   .btn.btn-default {
     border-radius: 20px;
     background: transparent;
