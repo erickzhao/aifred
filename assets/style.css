@@ -5,14 +5,14 @@ body {
 
 a {
   color: deepskyblue;
-  -webkit-transition: ease-in 0.3s;
-  transition: linear ease-in 0.3s; }
+  -webkit-transition: linear ease-in 0.3s all;
+  transition: linear ease-in 0.3s all; }
   a:hover, a:active, a:focus, a.btn.btn-default:hover, a.btn.btn-default:active {
     color: #005b8c;
     outline: 0; }
 
 .btn {
-  -webkit-transition: ease-in 0.3s all;
+  -webkit-transition: linear ease-in 0.3s all;
   transition: linear ease-in 0.3s all; }
   .btn.btn-default {
     border-radius: 20px;
@@ -32,7 +32,7 @@ a {
 nav {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
-  -webkit-transition: ease-in 0.3s all;
+  -webkit-transition: linear ease-in 0.3s all;
   transition: linear ease-in 0.3s all; }
   nav .navbar {
     min-height: 80px; }
@@ -82,12 +82,22 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 #hero .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: rgba(0, 91, 140, 0.3);
   color: #f9fbff;
   font-family: 'Raleway', sans-serif; }
@@ -136,5 +146,25 @@ nav {
       color: #111c35; }
 
 /* END MAIN BODY */
+/* FOOTER */
+footer {
+  padding: 40px 30px;
+  background-color: #111c35;
+  color: #f9fbff; }
+  footer h3 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center; }
+  footer ul {
+    text-align: center; }
+  footer .col-sm-4 {
+    padding: 0px 40px; }
+  footer .btn.btn-default {
+    border-radius: 0px; }
+  footer .form-group * {
+    margin-top: 25px; }
+  footer .form-group .form-control {
+    resize: none; }
+
+/* END FOOTER */
 
 /*# sourceMappingURL=style.css.map */
