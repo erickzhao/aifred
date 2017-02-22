@@ -19,6 +19,10 @@ a {
     transition: linear ease-in 0.3s all;
 }
 
+.highlight {
+    color: $red;
+}
+
 .btn {
     transition: linear ease-in 0.3s all;
     &.btn-default {

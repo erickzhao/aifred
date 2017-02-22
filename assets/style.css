@@ -11,6 +11,9 @@ a {
     color: #005b8c;
     outline: 0; }
 
+.highlight {
+  color: #ff5656; }
+
 .btn {
   -webkit-transition: linear ease-in 0.3s all;
   transition: linear ease-in 0.3s all; }
@@ -166,5 +169,4 @@ footer {
     resize: none; }
 
 /* END FOOTER */
-
 /*# sourceMappingURL=style.css.map */
