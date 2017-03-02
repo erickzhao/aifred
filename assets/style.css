@@ -34,9 +34,7 @@ a {
 /* NAVBAR */
 nav {
   font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  -webkit-transition: linear ease-in 0.3s all;
-  transition: linear ease-in 0.3s all; }
+  text-transform: uppercase; }
   nav .navbar {
     min-height: 80px; }
   nav .navbar-header button.navbar-toggle {
@@ -56,11 +54,15 @@ nav {
     font-weight: 600; }
   nav.clear-nav {
     background: none;
-    border: transparent; }
+    border: transparent;
+    -webkit-transition: ease-in-out 0.5s all;
+    transition: ease-in-out 0.5s all; }
   nav.dark-nav {
     box-shadow: 0 10px 6px -6px #999;
     background: #f9fbff;
-    border: transparent; }
+    border: transparent;
+    -webkit-transition: ease-in-out 0.5s all;
+    transition: ease-in-out 0.5s all; }
     nav.dark-nav .nav.navbar-nav.navbar-right li a,
     nav.dark-nav .navbar-header .navbar-brand {
       color: #111c35; }

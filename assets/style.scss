@@ -54,7 +54,6 @@ nav {
 
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    transition: linear ease-in 0.3s all;
 
     .navbar {
         min-height: 80px;
@@ -92,6 +91,7 @@ nav {
     &.clear-nav {
         background: none;
         border: transparent;
+        transition: ease-in-out 0.5s all;
     }
     
     &.dark-nav {
@@ -102,6 +102,7 @@ nav {
         }
         background: $grey-white;
         border: transparent;
+        transition: ease-in-out 0.5s all;
     }
 }
 /* END NAVBAR */
