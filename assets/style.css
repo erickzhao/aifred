@@ -122,7 +122,7 @@ nav {
 #main-body {
   text-align: center;
   margin: 0 auto;
-  margin-top: calc(100vh + 80px);
+  margin-top: 100vh;
   color: white; }
   #main-body h1, #main-body h2, #main-body h3, #main-body h4, #main-body h5, #main-body h6 {
     font-family: 'Raleway', sans-serif;
@@ -133,7 +133,7 @@ nav {
     padding-bottom: 10px; }
   #main-body p {
     margin: 0 auto;
-    padding: 30px;
+    padding: 0px 30px;
     max-width: 900px;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
@@ -141,7 +141,7 @@ nav {
     line-height: 2; }
   #main-body .body-section {
     margin: 0;
-    padding: 75px 40px; }
+    padding: 150px 40px; }
     #main-body .body-section:nth-child(4n-2) {
       background-color: #ff5656; }
     #main-body .body-section:nth-child(4n-4) {
