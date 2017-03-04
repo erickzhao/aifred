@@ -5,6 +5,10 @@ $blue-medium:   rgba(0, 91, 140, 1);
 $blue-dark:     rgba(17, 28, 53, 1);
 $grey-white:    rgba(249, 251, 255, 1);
 
+/* Media queries */
+$screen-mobile: "only screen and (max-width : 480px)";
+$screen-tablet: "only screen and (min-width : 480px) and (max-width : 720px)";
+
 /* GENERAL STYLING */
 
 body {
@@ -20,7 +24,7 @@ a {
 }
 
 .highlight {
-    color: $red;
+    color: $blue-light;
 }
 
 .btn {
@@ -59,6 +63,12 @@ nav {
         min-height: 80px;
     }
 
+    .logo {
+        margin: 15px 0px 0px 15px;
+        padding: 0px;
+        height: 50px;
+    }
+
     .navbar-header {
 
         button.navbar-toggle {
@@ -79,23 +89,26 @@ nav {
 
     }
 
-    .nav.navbar-nav.navbar-right li a,
-    .navbar-header .navbar-brand {
+    .nav.navbar-nav.navbar-right li a {
         padding: 0 30px;
         height: 80px;
         line-height: 80px;
         color: $grey-white;
         font-weight: 600;
-    }  
+    }
 
     &.clear-nav {
         background: none;
         border: transparent;
         transition: ease-in-out 0.5s all;
+
+        .logo {
+            filter: brightness(0) invert(1);
+        }
     }
-    
+
     &.dark-nav {
-        box-shadow: 0 10px 6px -6px #999;
+        box-shadow: 0 10px 6px -6px rgba(0,0,0,0.2);
         .nav.navbar-nav.navbar-right li a,
         .navbar-header .navbar-brand {
             color: $blue-dark;
@@ -109,24 +122,26 @@ nav {
 
 /* HERO IMAGE */
 #hero {
+
     //bg video
     .video-container {
         position: absolute;
         top: 0;
         bottom: 0;
         width: 100%;
-        height: 100%; 
+        height: 100%;
+        min-height: 400px;
         overflow: hidden;
 
         video {
             /* Make video to at least 100% wide and tall */
-            min-width: 100%; 
-            min-height: 100%; 
-            
+            min-width: 100%;
+            min-height: 100%;
+
             /* Setting width & height to auto prevents the browser from stretching or squishing the video */
             width: auto;
             height: auto;
-            
+
             /* Center the video */
             position: absolute;
             top: 50%;
@@ -137,31 +152,66 @@ nav {
     //overlay elements
     .overlay {
         @extend .video-container;
-        
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgba($blue-medium,0.3);
+        background: rgba($blue-medium,0.25);
 
         color: $grey-white;
         font-family: 'Raleway', sans-serif;
+
+        .logo {
+            height: 200px;
+            display: inline-block;
+            margin: 0px 20px 50px 0px;
+
+            @media #{$screen-tablet} {
+                height: 150px;
+                margin: 0px 20px 10px 0px;
+            }
+
+            @media #{$screen-mobile} {
+                display: inherit;
+                margin: 0 auto;
+            }
+        }
 
         //title
         .title {
             margin-bottom: 100px;
             h1 {
+                font-family: 'Josefin Slab', serif;
                 font-weight: 700;
                 font-size: 84pt;
                 margin-bottom: 0px;
+
+                @media #{$screen-tablet} {
+                    font-size: 60pt;
+                }
+
+                @media #{$screen-mobile} {
+                    font-size: 36pt;
+                }
             }
 
             h2 {
                 font-weight: 100;
                 font-size: 18pt;
                 margin-top: 0px;
+
+                @media #{$screen-tablet} {
+                    font-size: 14pt;
+                }
+
+                @media #{$screen-mobile} {
+                    font-size: 12pt;
+                }
             }
         }
+
+
     }
 }
 /* END HERO IMAGE */
@@ -169,7 +219,7 @@ nav {
 /* MAIN BODY */
 #main-body {
     text-align: center;
-    
+
     h1,h2,h3,h4,h5,h6 {
         font-family: 'Raleway', sans-serif;
         font-weight: 600;
@@ -232,7 +282,7 @@ footer {
     .btn.btn-default {
         border-radius: 0px;
     }
-    
+
     .form-group {
         * {
             margin-top: 25px;
