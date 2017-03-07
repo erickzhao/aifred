@@ -1,13 +1,14 @@
 /* Color Scheme variables */
 /* Media queries */
+/* Mixins */
 /* GENERAL STYLING */
 body {
   background-color: #f9fbff; }
 
 a {
   color: deepskyblue;
-  -webkit-transition: linear ease-in 0.3s all;
-  transition: linear ease-in 0.3s all; }
+  -webkit-transition: linear 0.2s all;
+  transition: linear 0.2s all; }
   a:hover, a:active, a:focus, a.btn.btn-default:hover, a.btn.btn-default:active {
     color: #005b8c;
     outline: 0; }
@@ -16,8 +17,8 @@ a {
   color: deepskyblue; }
 
 .btn {
-  -webkit-transition: linear ease-in 0.3s all;
-  transition: linear ease-in 0.3s all; }
+  -webkit-transition: linear 0.2s all;
+  transition: linear 0.2s all; }
   .btn.btn-default {
     border-radius: 20px;
     background: transparent;
@@ -167,21 +168,34 @@ nav {
   #main-body p {
     margin: 0 auto;
     padding: 0px 30px;
-    max-width: 900px;
+    max-width: 700px;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
-    font-size: 12pt;
+    font-size: 14pt;
     line-height: 2; }
   #main-body .body-section {
     margin: 0;
-    padding: 150px 40px; }
-    #main-body .body-section:nth-child(4n-2) {
-      background-color: #ff5656; }
-    #main-body .body-section:nth-child(4n-4) {
-      background-color: deepskyblue; }
+    padding: 40px;
+    min-height: 600px; }
+    #main-body .body-section:nth-child(2n) h2 {
+      border-bottom-color: white; }
     #main-body .body-section:nth-child(2n-1) {
-      background-color: #f9fbff;
+      background-color: white;
       color: #111c35; }
+  #main-body #body-2 {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ann.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ann.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  #main-body #body-4 {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("doctor.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("doctor.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 /* END MAIN BODY */
 /* FOOTER */

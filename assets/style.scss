@@ -9,18 +9,28 @@ $grey-white:    rgba(249, 251, 255, 1);
 $screen-mobile: "only screen and (max-width : 480px)";
 $screen-tablet: "only screen and (min-width : 480px) and (max-width : 720px)";
 
+/* Mixins */
+
+@mixin parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
 /* GENERAL STYLING */
 
 body {
     background-color: $grey-white;
 }
+
 a {
     color: $blue-light;
     &:hover, &:active, &:focus {
         color: $blue-medium;
         outline: 0;
     }
-    transition: linear ease-in 0.3s all;
+    transition: linear 0.2s all;
 }
 
 .highlight {
@@ -28,7 +38,7 @@ a {
 }
 
 .btn {
-    transition: linear ease-in 0.3s all;
+    transition: linear 0.2s all;
     &.btn-default {
         border-radius: 20px;
         background: transparent;
@@ -234,26 +244,36 @@ nav {
     p {
         margin: 0 auto;
         padding: 0px 30px;
-        max-width: 900px;
+        max-width: 700px;
         text-align: justify;
         font-family: 'Roboto', sans-serif;
-        font-size: 12pt;
+        font-size: 14pt;
         line-height: 2;
     }
 
     .body-section {
         margin: 0;
-        padding: 150px 40px;
-        &:nth-child(4n-2) {
-            background-color: $red;
-        }
-        &:nth-child(4n-4) {
-            background-color: $blue-light;
+        padding: 40px;
+        min-height: 600px;
+        &:nth-child(2n) {
+            h2 {
+                border-bottom-color: white;
+            }
         }
         &:nth-child(2n-1) {
-            background-color: $grey-white;
+            background-color: white;
             color: $blue-dark;
         }
+    }
+
+    #body-2 {
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("ann.jpg");
+        @include parallax();
+    }
+
+    #body-4 {
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("doctor.jpg");
+        @include parallax();
     }
 }
 /* END MAIN BODY */
