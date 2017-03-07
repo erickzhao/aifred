@@ -249,6 +249,10 @@ nav {
         font-family: 'Roboto', sans-serif;
         font-size: 14pt;
         line-height: 2;
+
+        @media #{$screen-mobile} {
+            font-size: 12pt;
+        }
     }
 
     .body-section {
