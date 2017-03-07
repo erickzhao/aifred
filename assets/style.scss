@@ -216,6 +216,7 @@ nav {
 
                 @media #{$screen-mobile} {
                     font-size: 12pt;
+                    margin: 0px 20px;
                 }
             }
         }
@@ -249,15 +250,21 @@ nav {
         font-family: 'Roboto', sans-serif;
         font-size: 14pt;
         line-height: 2;
+        opacity: 0;
 
         @media #{$screen-mobile} {
             font-size: 12pt;
+        }
+
+        &.loaded {
+            transition: ease-in 0.5s all;
+            opacity: 1;
         }
     }
 
     .body-section {
         margin: 0;
-        padding: 40px;
+        padding: 50px;
         min-height: 600px;
         &:nth-child(2n) {
             h2 {

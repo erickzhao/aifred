@@ -3,7 +3,7 @@ $('a[href^="#"]').on('click', function(event) {
     if( target.length ) {
         event.preventDefault();
         $('html, body').stop().animate({
-            scrollTop: target.offset().top-85
+            scrollTop: target.offset().top-80
         }, 1000);
     }
 });

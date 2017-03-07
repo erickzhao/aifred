@@ -149,7 +149,8 @@ nav {
           font-size: 14pt; } }
       @media only screen and (max-width: 480px) {
         #hero .overlay .title h2 {
-          font-size: 12pt; } }
+          font-size: 12pt;
+          margin: 0px 20px; } }
 
 /* END HERO IMAGE */
 /* MAIN BODY */
@@ -172,13 +173,18 @@ nav {
     text-align: justify;
     font-family: 'Roboto', sans-serif;
     font-size: 14pt;
-    line-height: 2; }
+    line-height: 2;
+    opacity: 0; }
     @media only screen and (max-width: 480px) {
       #main-body p {
         font-size: 12pt; } }
+    #main-body p.loaded {
+      -webkit-transition: ease-in 0.5s all;
+      transition: ease-in 0.5s all;
+      opacity: 1; }
   #main-body .body-section {
     margin: 0;
-    padding: 40px;
+    padding: 50px;
     min-height: 600px; }
     #main-body .body-section:nth-child(2n) h2 {
       border-bottom-color: white; }
@@ -221,5 +227,4 @@ footer {
     resize: none; }
 
 /* END FOOTER */
-
 /*# sourceMappingURL=style.css.map */

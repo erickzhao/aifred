@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var minScroll = 300;
+    var minScroll = 200;
     var minWidth = 768;
 
     //if screen is narrow on document load, load dark navbar
