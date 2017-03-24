@@ -57,6 +57,8 @@ nav {
     line-height: 80px;
     color: #f9fbff;
     font-weight: 600; }
+    nav .nav.navbar-nav.navbar-right li a:hover {
+      color: #ff5656; }
   nav.clear-nav {
     background: none;
     border: transparent;
@@ -74,6 +76,9 @@ nav {
     nav.dark-nav .nav.navbar-nav.navbar-right li a,
     nav.dark-nav .navbar-header .navbar-brand {
       color: #111c35; }
+      nav.dark-nav .nav.navbar-nav.navbar-right li a:hover,
+      nav.dark-nav .navbar-header .navbar-brand:hover {
+        color: #ff5656; }
 
 /* END NAVBAR */
 /* HERO IMAGE */
@@ -112,7 +117,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(0, 91, 140, 0.25);
+  background: rgba(0, 191, 255, 0.18);
   color: #f9fbff;
   font-family: 'Raleway', sans-serif; }
   #hero .overlay .logo {
@@ -160,19 +165,20 @@ nav {
   margin-top: 100vh;
   color: white; }
   #main-body h1, #main-body h2, #main-body h3, #main-body h4, #main-body h5, #main-body h6 {
+    text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     margin-top: 0px;
     display: inline-block;
-    border-bottom: 3px solid #111c35;
+    border-bottom: 3px solid deepskyblue;
     padding-bottom: 10px; }
   #main-body p {
     margin: 0 auto;
-    padding: 0px 30px;
+    margin-bottom: 20px;
     max-width: 700px;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
-    font-size: 14pt;
+    font-size: 12pt;
     line-height: 2;
     opacity: 0; }
     @media only screen and (max-width: 480px) {
@@ -185,9 +191,7 @@ nav {
   #main-body .body-section {
     margin: 0;
     padding: 50px;
-    min-height: 600px; }
-    #main-body .body-section:nth-child(2n) h2 {
-      border-bottom-color: white; }
+    min-height: 500px; }
     #main-body .body-section:nth-child(2n-1) {
       background-color: white;
       color: #111c35; }
@@ -210,8 +214,10 @@ nav {
 /* FOOTER */
 footer {
   padding: 40px 30px;
-  background-color: #111c35;
+  background-color: deepskyblue;
   color: #f9fbff; }
+  footer a {
+    color: #005b8c; }
   footer h3 {
     font-family: 'Raleway', sans-serif;
     text-align: center; }

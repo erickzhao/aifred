@@ -105,6 +105,9 @@ nav {
         line-height: 80px;
         color: $grey-white;
         font-weight: 600;
+        &:hover {
+            color: $red;
+        }
     }
 
     &.clear-nav {
@@ -122,6 +125,9 @@ nav {
         .nav.navbar-nav.navbar-right li a,
         .navbar-header .navbar-brand {
             color: $blue-dark;
+            &:hover {
+            color: $red;
+        }
         }
         background: $grey-white;
         border: transparent;
@@ -166,7 +172,7 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgba($blue-medium,0.25);
+        background: rgba($blue-light,0.18);
 
         color: $grey-white;
         font-family: 'Raleway', sans-serif;
@@ -231,11 +237,12 @@ nav {
     text-align: center;
 
     h1,h2,h3,h4,h5,h6 {
+        text-transform: uppercase;
         font-family: 'Raleway', sans-serif;
         font-weight: 600;
         margin-top: 0px;
         display: inline-block;
-        border-bottom: 3px solid $blue-dark;
+        border-bottom: 3px solid $blue-light;
         padding-bottom: 10px;
     }
     margin: 0 auto;
@@ -244,11 +251,11 @@ nav {
 
     p {
         margin: 0 auto;
-        padding: 0px 30px;
+        margin-bottom: 20px;
         max-width: 700px;
         text-align: justify;
         font-family: 'Roboto', sans-serif;
-        font-size: 14pt;
+        font-size: 12pt;
         line-height: 2;
         opacity: 0;
 
@@ -265,12 +272,7 @@ nav {
     .body-section {
         margin: 0;
         padding: 50px;
-        min-height: 600px;
-        &:nth-child(2n) {
-            h2 {
-                border-bottom-color: white;
-            }
-        }
+        min-height: 500px;
         &:nth-child(2n-1) {
             background-color: white;
             color: $blue-dark;
@@ -293,8 +295,12 @@ nav {
 
 footer {
     padding: 40px 30px;
-    background-color: $blue-dark;
+    background-color: $blue-light;
     color: $grey-white;
+
+    a {
+        color: $blue-medium;
+    }
 
     h3 {
         font-family: 'Raleway', sans-serif;
