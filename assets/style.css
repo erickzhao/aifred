@@ -1,4 +1,9 @@
 #intro-page {
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   width: 100vw;
   height: 100vh;
   background-image: URL("/assets/intro-bg.jpg");
@@ -10,19 +15,30 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
+#nav-page {
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+
 .header {
   color: white; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif; }
+
+h1 {
+  font-size: 5em; }
+
 .btn {
-  -webkit-transition: 0.3s linear all;
-  transition: 0.3s linear all; }
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all; }
   .btn.btn-default {
     color: white;
     border-radius: 0;

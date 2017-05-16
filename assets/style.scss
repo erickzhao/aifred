@@ -1,4 +1,8 @@
 #intro-page {
+    transition: opacity 1s linear;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     width: 100vw;
     height: 100vh;
     background-image: URL('/assets/intro-bg.jpg');
@@ -6,17 +10,32 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+#nav-page {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .header {
     color: white;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+}
+
 .btn {
 
-    transition: 0.3s linear all;
+    transition: 0.5s linear all;
 
     &.btn-default {
         color: white;
