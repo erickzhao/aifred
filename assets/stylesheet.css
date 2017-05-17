@@ -84,6 +84,13 @@ h1#who-i-am {
   outline:0;
 }
 
+@media (max-width: 720px) {
+  #nav-buttons {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 #btn1 {
   position: absolute;
   margin-left:-80px;
