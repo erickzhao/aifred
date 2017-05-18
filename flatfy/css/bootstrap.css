@@ -3935,7 +3935,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #2c3e50;
+  background-color: #354254;
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
@@ -5977,4 +5977,32 @@ input:focus {
 .well {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+/* added stuff */
+
+#h3sub {
+	color:#ccc;
+	}
+.fa {
+	color:#EAEAEA;
+	}
+.fa:hover {
+	color:#ffffff;
+	}
+	
+#submit {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color:#354254; 
+  color:#ffffff;
+  boder:1px 1px 1px 1px; 
+  border-style: solid; 
+  border-color:#ffffff;
+    	-webkit-transition-duration: 0.4s; /* Safari */
+
+}
+
+#submit:hover {
+	background-color:#ffffff;
+	color:#354254;
 }
