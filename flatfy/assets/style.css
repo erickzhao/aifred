@@ -181,6 +181,11 @@ nav {
     font-size: 12pt;
     line-height: 2;
     opacity: 0; }
+	h7 {
+	font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    line-height: 2;
+    	}
     @media only screen and (max-width: 480px) {
       #main-body p {
         font-size: 12pt; } }

@@ -165,3 +165,19 @@ opacity:1;
 .deg216 { transform: rotate(236deg) translate(-20em)rotate(-236deg); }
 .deg288 { transform: rotate(304deg) translate(-20em) rotate(-304deg); }
 .deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+
+.btn {
+  -webkit-transition: linear 0.2s all;
+  transition: linear 0.2s all; }
+  .btn.btn-default {
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white; }
+    .btn.btn-default:focus, .btn.btn-default:hover, .btn.btn-default:active {
+      outline: 0; }
+    .btn.btn-default:hover, .btn.btn-default:active {
+      background-color: white;
+      color: #111c35; }
+    .btn.btn-default:highlight {
+      background: transparent; }
