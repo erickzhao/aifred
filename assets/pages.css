@@ -29,3 +29,10 @@
 .h1_home {
 	margin-top:-0px;
 	}
+.lead {
+	text-align:justify;
+}
+
+.team .lead {
+	text-align:center;
+}
