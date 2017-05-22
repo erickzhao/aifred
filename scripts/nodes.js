@@ -1,6 +1,6 @@
 var canvas = document.querySelector("canvas");
 
-if (window.outerWidth / window.outerHeight > 1) {
+if (window.outerWidth > 768) {
   canvas.width = 1280;
   canvas.height = 720;
 } else {
@@ -29,16 +29,13 @@ function StaticBall (startX, startY, startVelX, startVelY) {
   
   this.draw = function(ctx, can) {
     ctx.beginPath();
-    ctx.globalAlpha = 1;
-    ctx.fillStyle = '#354254';
+    ctx.globalAlpha = 0;
+    ctx.fillStyle = '#FFFFFF';
     ctx.arc((this.x) | 0, (this.y) | 0, 10, 0, TAU, false);
     ctx.fill();
 
   } 
 }
-
-
-
 
 function Ball (startX, startY, startVelX, startVelY) {
   this.x = startX || Math.random() * canvas.width;
@@ -73,32 +70,25 @@ for (var i = 0; i < canvas.width * canvas.height / (65*65); i++) {
 
 var staticballs = [];
 for (var i = 0; i < 5; i++) {
-  staticballs.push(new StaticBall(canvas.width*0.3, canvas.height*0.75));
-    staticballs.push(new StaticBall(canvas.width*0.3 + 40, canvas.height*0.75 + 30));
-  	staticballs.push(new StaticBall(canvas.width*0.3 + 40, canvas.height*0.75 - 30));
-  	staticballs.push(new StaticBall(canvas.width*0.3 - 40, canvas.height*0.75 + 30));
- 	staticballs.push(new StaticBall(canvas.width*0.3 - 40, canvas.height*0.75 - 30));
-  staticballs.push(new StaticBall(canvas.width/2, canvas.height*0.85));
-  	staticballs.push(new StaticBall(canvas.width/2 + 40, canvas.height*0.85 + 30));
-  	staticballs.push(new StaticBall(canvas.width/2 + 40, canvas.height*0.85 - 30));
-  	staticballs.push(new StaticBall(canvas.width/2 - 40, canvas.height*0.85 + 30));
- 	staticballs.push(new StaticBall(canvas.width/2 - 40, canvas.height*0.85 - 30));
-  staticballs.push(new StaticBall(canvas.width*0.7, canvas.height*0.75));
-  	staticballs.push(new StaticBall(canvas.width*0.7 + 40, canvas.height*0.75 + 30));
-  	staticballs.push(new StaticBall(canvas.width*0.7 + 40, canvas.height*0.75 - 30));
-  	staticballs.push(new StaticBall(canvas.width*0.7 - 40, canvas.height*0.75 + 30));
- 	staticballs.push(new StaticBall(canvas.width*0.7 - 40, canvas.height*0.75 - 30));
-  staticballs.push(new StaticBall(canvas.width*0.7, canvas.height*0.4));
-  	staticballs.push(new StaticBall(canvas.width*0.75 + 40, canvas.height*0.4 + 30));
-  	staticballs.push(new StaticBall(canvas.width*0.75 + 40, canvas.height*0.4 - 30));
-  	staticballs.push(new StaticBall(canvas.width*0.75 - 40, canvas.height*0.4 + 30));
- 	staticballs.push(new StaticBall(canvas.width*0.75 - 40, canvas.height*0.4 - 30));
-  staticballs.push(new StaticBall(canvas.width*0.25, canvas.height*0.4));
-	staticballs.push(new StaticBall(canvas.width*0.25 + 40, canvas.height*0.4 + 30));
-  	staticballs.push(new StaticBall(canvas.width*0.25 + 40, canvas.height*0.4 - 30));
-  	staticballs.push(new StaticBall(canvas.width*0.25 - 40, canvas.height*0.4 + 30));
- 	staticballs.push(new StaticBall(canvas.width*0.25 - 40, canvas.height*0.4 - 30));
+  var buttonHeight = 50;
 
+  if (window.outerWidth > 768) {
+    var buttonWidth = 150;
+    var divTop = 0.8; // i.e. top: 80% for the buttons
+    var centreWidth = canvas.width*(i*20+10)/100; //horiz centre of button
+    var centreHeight = canvas.height*divTop; //vert centre button
+  } else {
+    var buttonWidth = 300;
+    var divTop = 0.5;
+    var centreWidth = canvas.width*0.5;
+    var centreHeight = canvas.height*divTop+canvas.height*divTop*(i*20+10)/100;
+  }
+
+    staticballs.push(new StaticBall(centreWidth, centreHeight));
+    staticballs.push(new StaticBall(centreWidth+buttonWidth/2, centreHeight+buttonHeight/2));
+    staticballs.push(new StaticBall(centreWidth+buttonWidth/2, centreHeight-buttonHeight/2));
+    staticballs.push(new StaticBall(centreWidth-buttonWidth/2, centreHeight+buttonHeight/2));
+    staticballs.push(new StaticBall(centreWidth-buttonWidth/2, centreHeight-buttonHeight/2));
 }
 
 var lastTime = Date.now();

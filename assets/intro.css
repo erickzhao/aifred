@@ -1,0 +1,115 @@
+/* font */
+@font-face {
+  font-family: 'SciFly';
+  src: url('scifly.ttf') format('truetype');
+}
+
+body {
+  margin:auto;
+  background-color: #354254;
+}
+
+#intro-page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s linear;
+}
+
+#intro-page h1 {
+  font-family: 'SciFly', sans-serif;
+  font-size: 10em;
+  color: #ffffff;
+}
+
+#nav-page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s linear;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#nav-logo {
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+}
+
+#nav-logo img {
+  width: 300px;
+  height: 300px;
+}
+
+#nav-page #nav-buttons {
+  position: absolute;
+  top: 60%;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #nav-page #nav-buttons {
+    flex-direction: column;
+    top: 50%;
+    height: 50%;
+  }
+  #nav-page #nav-logo {
+    top: 0%;
+    height: 50%;
+  }
+  #nav-logo img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btn.btn-menu {
+  background: #354254;
+  border: 1px solid #4EC49F;
+  height: 50px;
+  width: 150px;
+  white-space: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: #ffffff;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn.btn-menu:hover {
+  background: white;
+  color: #354254;
+}
+
+.btn.btn-menu:focus {
+  outline:0;
+}
+
+.navbar-default {
+  background-color: #354254;
+}
