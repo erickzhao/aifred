@@ -1,6 +1,12 @@
 var canvas = document.querySelector("canvas");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+
+if (window.outerWidth / window.outerHeight > 1) {
+  canvas.width = 1280;
+  canvas.height = 720;
+} else {
+  canvas.width = 720;
+  canvas.height = 1280;
+}
 var ctx = canvas.getContext("2d");
 
 var TAU = 2 * Math.PI;
