@@ -89,7 +89,7 @@ h1#who-i-am {
   }
 }
 
-#btn1 {
+#nav-page #btn1 {
   position: absolute;
   margin-left:-80px;
   margin-top:-80px;
@@ -97,7 +97,7 @@ h1#who-i-am {
   left:  30%;
   }
 
-#btn2 {
+#nav-page #btn2 {
   position: absolute;
   margin-left:-80px;
   margin-top:-80px;
@@ -105,7 +105,7 @@ h1#who-i-am {
   left: 50%;
 }
 
-#btn3 {
+#nav-page #btn3 {
   position: absolute;
   margin-left:-80px;
   margin-top:-80px;
@@ -113,7 +113,7 @@ h1#who-i-am {
   left: 70%;
 }
 
-#btn4 {
+#nav-page #btn4 {
   position: absolute;
   margin-left:-80px;
   margin-top:-80px;
@@ -121,10 +121,14 @@ h1#who-i-am {
   left: 75%;
 }
 
-#btn5 {
+#nav-page #btn5 {
   position: absolute;
   margin-left:-80px;
   margin-top:-80px;
   top: 40%;
   left: 25%;
+}
+
+.navbar-default {
+  background-color: #354254;
 }
