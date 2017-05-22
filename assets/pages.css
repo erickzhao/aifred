@@ -1,0 +1,38 @@
+#h3sub {
+  color:#ccc;
+  }
+.fa {
+  color:#EAEAEA;
+  }
+.fa:hover {
+  color:#ffffff;
+  }
+  
+#submit {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color:#354254; 
+  color:#ffffff;
+  boder:1px 1px 1px 1px; 
+  border-style: solid; 
+  border-color:#ffffff;
+  -webkit-transition-duration: 0.4s; /* Safari */
+}
+
+#submit:hover {
+  background-color:#ffffff;
+  color:#354254;
+}
+
+.intro-header {
+	height:300px;
+	}
+.h1_home {
+	margin-top:-0px;
+	}
+.lead {
+	text-align:justify;
+}
+
+.team .lead {
+	text-align:center;
+}

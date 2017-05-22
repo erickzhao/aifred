@@ -1,149 +1,59 @@
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AIfred</title>
+    <title>aifred</title>
     <!--Stylesheets-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600,700|Roboto:300|Josefin+Slab:400,700" rel="stylesheet">
-    <link href="assets/style.css" rel="stylesheet"/>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Roboto:300" rel="stylesheet">
+    <link href="assets/intro.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse bg-primary navbar-fixed-top clear-nav">
-        <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+    <div id="intro-page">
+        <div id="intro-wrapper">
+        <img src="img/logo3.png" id="intro-logo">
+        <button class="btn btn-menu" onclick="toggleVisibility()">Enter</button>
+        <p id="intro-blurb">
+            Mental health is an integral part of our well-being and how we function within society.
+            aifred aims to bring personalized treatments at scale by combining best practices from psychiatry and deep learning.
+        </p>
+        </div>
+    </div>
+
+    <div id="nav-page">
+        <canvas width="1280px" height="720px"></canvas> 
+        <div id="nav-logo">
+            <img class="align-center" src="assets/logo1.png">
+            <h1>Who are you?</h1>
+        </div>
+        
+        <div id="nav-buttons">
+            <button class="btn btn-menu" id="btn-general" onclick="location.href='general.html';">
+                General Public
             </button>
-            <img class="logo" src="assets/logo.png">
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#body-1">About us</a></li>
-                <li><a href="#body-2">Technology</a></li>
-                <li><a href="#body-3">Grand Challenge</a></li>
-                <li><a href="#body-4">What we do</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-
-    <div id="hero">
-        <!-- Video Hero Image -->
-        <div class="video-container">
-            <video autoplay loop muted width="1280" height="720">
-                <source src="assets/pills.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            </video>
-        </div>
-        <!-- Overlay text -->
-        <div class="overlay">
-            <div class="text-center title">
-                <img class="logo" src="assets/logo.png">
-                <h1 style="display:inline-block; vertical-align: middle;"><span class="highlight">AI</span>fred</h1>
-                <h2>Precision Medicine : Clinical Decision Aid for Increased Treatment Efficacy</h2>
-            </div>
-
-            <a href="#body-1"><button type="button" class="btn btn-default btn-lg">Learn more</button></i></a>
+            <button class="btn btn-menu" id="btn-doctor" onclick="location.href='doctor.html';">
+                Physician
+            </button>
+            <button class="btn btn-menu" id="btn-researcher" onclick="location.href='researcher.html';">
+                Researcher
+            </button>
+            <button class="btn btn-menu" id="btn-investor" onclick="location.href='investor.html';">
+                Investor
+            </button>
+            <button class="btn btn-menu" id="btn-patient" onclick="location.href='patient.html';">
+                Patient
+            </button>
         </div>
     </div>
-
-    <div id="main-body">
-        <div id="body-1" class="body-section">
-            <h2>About us</h2>
-            <p>
-                We're a team of neuroscientists, medical professionals, computer scientists, entrepreneurs but most importantly firm believers
-                in the idea of challenging the status quo to deliver exponential gains to our species, driven by data, grounded in research.
-            </p>
-            <p>
-                Our team has had past success with our foray into neurotechnology where we built "The Thinking Cap", a truly adaptive learning system
-                that used neuro feedback and machine learning to improve habit formation. We won the Consumer Grand Challenge award at the NeuroTechX
-                competition that invited participation from top universities across Eastern Canada. 
-            </p>
-        </div>
-        <div id="body-2" class="body-section">
-            <h2>Technology</h2>
-            <p>
-                Using the most cutting-edge machine learning techniques combined with the best in class research and evaluation measures, we’re building
-                AIfred as a solution firmly grounded in science that delivers value to doctors. 
-            </p>
-            <p>
-                More specifically we use fully connected layers in a deep neural network along with sensitivity, specificity, Positive Predictive Value, Negative Predictive Value, and ROC curves to test each iteration of the AI system. 
-            </p>
-              
-        </div>
-        <div id="body-3" class="body-section">
-            <h2>Grand Challenge</h2>
-            <p>
-                AIfred will help to deliver exponential gains to both doctors and patients. AIfred will be a trusted advisor to the doctor aiding them
-                in making faster and more effective clinical decisions while patients will benefit tremendously from reduced recovery times and enhanced
-                outcomes from their prescribed treatments. 
-            </p>
-            <p>
-                Adequate access to healthcare while maintaining a high-level of personalized care, not only in diagnoses but also in prescribing medications and treatment, are grand challenges we face as the population increases and life expectancy rises in all parts of the world. This problem is exacerbated in developing nations that have until now been unable to address mental health issues in an adequate manner.
-            </p>
-        </div>
-        <div id="body-4" class="body-section">
-            <h2>What we do</h2>
-            <p>
-                AIfred combines deep research with innovative technical approaches to help increase treatment efficacy in the field of psychiatry - we help
-                reduce recovery times, increase treatment efficacy and allow better allocation of medical resources through more efficient treatment plans.
-            </p>
-            <p>
-                The purpose of Alfred is to aggregate the patient’s health data (including past visits) along with the pathology, treatment and treatment dosage identified by the healthcare provider, in order to output a percentage value for the predicted treatment efficacy for that given patient. The common outcome measures will be clinical improvement, as measured by validated rating scales and functional assessments, and patient recovery times.
-            </p>
-        </div>
-    </div>
-
-    <footer>
-        <div class="row">
-            <div class="col-xs-12 col-sm-4">
-                <h3>Links</h3>
-                <ul class="list-inline">
-                    <li><a href="http://www.twitter.com"><i class="fa fa-twitter-square fa-3x"></i></a></li>
-                    <li><a href="http://www.facebook.com"><i class="fa fa-facebook-square fa-3x"></i></a></li>
-                    <li><a href="http://www.linkedin.com"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-                <h3>Contact</h3>
-                <form method="POST" action="http://formspree.io/mcgillneurotech@gmail.com">
-                    <meta name="referrer" content="origin" />
-                    <div class="form-group">
-                        <input class="form-control" type="email" name="email" placeholder="Your email">
-                        <textarea class="form-control" name="message" placeholder="Your message"></textarea>
-                        <button class="btn btn-default" type="submit">Send</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-                <h3>Where to find us</h3>
-                <iframe
-                    width="100%"
-                    height="200px"
-                    frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDds5Ra8zJbLsJqrFjP_a2m-zgAnZsZuOg
-                        &q=651+Rue+Sherbrooke+O,+Montréal,+QC+H3A+1E3" allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-    </footer>
-
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="scripts/navbar-opacity.js"></script>
-    <script src="scripts/link-scroll.js"></script>
-    <script src="scripts/load-onscroll.js"></script>
+    <script src="scripts/nodes.js"></script>
+    <script src="scripts/transition.js"></script>
 </body>
 </html>
