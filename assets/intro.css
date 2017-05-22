@@ -10,16 +10,16 @@ body {
 }
 
 #intro-page {
+  font-family: 'Lato', sans-serif;
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  transition: opacity 0.5s linear;
 }
 
 #intro-logo {
-  width: 400px;
+  width: 300px;
 }
 
 #intro-wrapper {
@@ -37,7 +37,7 @@ body {
 
 #intro-blurb {
   color: white;
-  width: 400px;
+  width: 300px;
   text-align: justify;
 }
 
@@ -53,6 +53,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  transition: opacity 0.5s linear;
 }
 
 canvas {
