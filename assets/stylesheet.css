@@ -76,8 +76,6 @@ h1#who-i-am {
 
 .btn.btn-menu:hover {
 	box-shadow: 0px 0px 3px 3px #4ec49f;
-	height:135px;
-  width:145px;
 }
 
 .btn.btn-menu:focus {
@@ -98,10 +96,6 @@ h1#who-i-am {
   top: 75%;
   left:  30%;
   }
-#btn1:hover {
-  margin-left:-85px;
-  margin-top:-85px;
-}
 
 #btn2 {
   position: absolute;
@@ -109,10 +103,6 @@ h1#who-i-am {
   margin-top:-80px;
   top: 85%;
   left: 50%;
-}
-#btn2:hover {
-  margin-left:-85px;
-  margin-top:-85px;
 }
 
 #btn3 {
@@ -122,10 +112,6 @@ h1#who-i-am {
   top: 75%;
   left: 70%;
 }
-#btn3:hover {
-  margin-left:-85px;
-  margin-top:-85px;
-}
 
 #btn4 {
   position: absolute;
@@ -134,10 +120,6 @@ h1#who-i-am {
   top: 40%;
   left: 75%;
 }
-#btn4:hover {
-  margin-left:-85px;
-  margin-top:-85px;
-}
 
 #btn5 {
   position: absolute;
@@ -145,8 +127,4 @@ h1#who-i-am {
   margin-top:-80px;
   top: 40%;
   left: 25%;
-}
-#btn5:hover {
-  margin-left:-85px;
-  margin-top:-85px;
 }
