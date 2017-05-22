@@ -36,10 +36,10 @@ body {
 #nav-page-logo {
   z-index: 10;
   position: relative;
-  width: 400px;
-  height: 400px;
-  top: calc(30% - 200px);
-  left: calc(50% - 200px);
+  width: 300px;
+  height: 300px;
+  top: calc(30% - 150px);
+  left: calc(50% - 150px);
 }
 
 canvas {
@@ -91,48 +91,14 @@ h1#who-i-am {
   }
 }
 
-.btnn {
-  cursor:pointer;
-  background: #354254;
-opacity:1;
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 50%;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  font-size: 25px;
-  text-align:center;
-  margin-top: -20px;
-  height:130px;width:150px;
-  border:2px solid #4EC49F;
-  text-decoration: bold;
-  text-align:center;
-  	box-shadow: 0px 0px 1px 1px #4ec49f;
-  	-webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-
-}
-
-
-.btnn:hover {
-	box-shadow: 0px 0px 3px 3px #4ec49f;
-	opacity:1;
-	height:140px;width:160px;
-    font-size: 28px;
-    font-weight:bold;
-}
-
-
 #btn1 {
   position: absolute;
   margin-left:-80px;
   margin-top:-80px;
   top: 75%;
   left:  30%;
-  line-height:30px;
   }
 #btn1:hover {
-  line-height:33px;
   margin-left:-85px;
   margin-top:-85px;
 }
@@ -143,14 +109,11 @@ opacity:1;
   margin-top:-80px;
   top: 85%;
   left: 50%;
-  line-height:40px;
 }
 #btn2:hover {
-  line-height:43px;
   margin-left:-85px;
   margin-top:-85px;
 }
-
 
 #btn3 {
   position: absolute;
@@ -158,11 +121,9 @@ opacity:1;
   margin-top:-80px;
   top: 75%;
   left: 70%;
-  line-height:40px;
 }
 #btn3:hover {
-  line-height:43px;
-    margin-left:-85px;
+  margin-left:-85px;
   margin-top:-85px;
 }
 
@@ -172,11 +133,9 @@ opacity:1;
   margin-top:-80px;
   top: 40%;
   left: 75%;
-  line-height:40px;
 }
 #btn4:hover {
-  line-height:43px;
-    margin-left:-85px;
+  margin-left:-85px;
   margin-top:-85px;
 }
 
@@ -186,27 +145,8 @@ opacity:1;
   margin-top:-80px;
   top: 40%;
   left: 25%;
-  line-height:40px;
 }
 #btn5:hover {
-  line-height:43px;
-    margin-left:-85px;
+  margin-left:-85px;
   margin-top:-85px;
 }
-
-
-.btn {
-  -webkit-transition: linear 0.2s all;
-  transition: linear 0.2s all; }
-  .btn.btn-default {
-    border-radius: 20px;
-    background: transparent;
-    border: 2px solid white;
-    color: white; }
-    .btn.btn-default:focus, .btn.btn-default:hover, .btn.btn-default:active {
-      outline: 0; }
-    .btn.btn-default:hover, .btn.btn-default:active {
-      background-color: white;
-      color: #111c35; }
-    .btn.btn-default:highlight {
-      background: transparent; }
