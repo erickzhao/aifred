@@ -1,4 +1,6 @@
 var canvas = document.querySelector("canvas");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 var ctx = canvas.getContext("2d");
 
 var TAU = 2 * Math.PI;
@@ -21,12 +23,16 @@ function StaticBall (startX, startY, startVelX, startVelY) {
   
   this.draw = function(ctx, can) {
     ctx.beginPath();
-    ctx.globalAlpha = 0;
-    ctx.fillStyle = '#ffffff';
+    ctx.globalAlpha = 1;
+    ctx.fillStyle = '#354254';
     ctx.arc((this.x) | 0, (this.y) | 0, 10, 0, TAU, false);
     ctx.fill();
+
   } 
 }
+
+
+
 
 function Ball (startX, startY, startVelX, startVelY) {
   this.x = startX || Math.random() * canvas.width;

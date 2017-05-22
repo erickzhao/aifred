@@ -125,47 +125,6 @@ opacity:1;
 }
 
 
-.circle-container {
-    position: relative;
-    width: 24em;
-    height: 24em;
-    padding: 2.8em;
-    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
-    border: dashed 1px;
-    border-radius: 50%;
-    margin: -500 auto 0;
-}
-.circle-container a {
-    display: block;
-    position: absolute;
-    top: 50%; left: 50%;
-    width: 4em; height: 4em;
-    margin: -2em;
-    cursor:pointer;
-  background: #354254;
-opacity:1;
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 50%;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  font-size: 25px;
-  text-align:center;
-  margin-top: -20px;
-  height:130px;width:150px;
-  border:2px solid #4EC49F;
-  text-decoration: none;
-  text-align:center;
-  	box-shadow: 0px 0px 1px 1px #4ec49f;
-}
-.circle-container img { display: block; width: 100%; }
-.deg0 { transform: rotate(12deg) translate(-20em) rotate(-12deg); } /* 12em = half the width of the wrapper */
-.deg72 { transform: rotate(90deg) translate(-20em) rotate(-90deg); }
-.deg144 { transform: rotate(168deg) translate(-20em) rotate(-168deg); }
-.deg216 { transform: rotate(236deg) translate(-20em)rotate(-236deg); }
-.deg288 { transform: rotate(304deg) translate(-20em) rotate(-304deg); }
-.deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
-
 .btn {
   -webkit-transition: linear 0.2s all;
   transition: linear 0.2s all; }
