@@ -36,3 +36,11 @@
 .team .lead {
 	text-align:center;
 }
+@media (min-width:767px) {
+.gen {
+	margin-top:100px;
+	}
+	}
+.morph-button {
+	height:0px;
+	}
