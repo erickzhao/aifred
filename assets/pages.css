@@ -24,7 +24,7 @@
 }
 
 .intro-header {
-	height:300px;
+	height:350px;
 	}
 .h1_home {
 	margin-top:-0px;
@@ -44,3 +44,12 @@
 .morph-button {
 	height:0px;
 	}
+
+.pad {
+	margin-right:50px;
+	margin-left:50px;
+	margin-top:15px;
+	margin-bottom:15px;
+	}
+	
+
