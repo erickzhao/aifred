@@ -40,16 +40,24 @@
 .gen {
 	margin-top:100px;
 	}
-	}
-.morph-button {
-	height:0px;
-	}
-
+}
 .pad {
 	margin-right:50px;
 	margin-left:50px;
 	margin-top:15px;
 	margin-bottom:15px;
 	}
+.morph-button {
+	height:0px;
+	}
+
+@media (max-width:406px) {
+.pad {
+	margin-right:5px;
+	margin-left:5px;
+	margin-top:15px;
+	margin-bottom:15px;
+	}
+}
 	
 
