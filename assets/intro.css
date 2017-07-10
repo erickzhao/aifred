@@ -88,6 +88,32 @@ canvas {
   align-items: center;
 }
 
+#nav-page #footer {
+	position: absolute;
+	width:100%;
+	height:50px;
+	background-color:#293340;
+	color:white;
+	bottom:0;	
+	}
+#nav-page #footer-title {
+	color:#e5e5e5;
+	font-size:1.5em;
+	margin-left:15px;
+	margin-top:15px;
+	display:inline-block;
+	}
+
+#nav-page #footer-link {
+	color:#e5e5e5;
+	font-size:1em;
+	float:right;
+	margin-right:15px;
+	margin-top:15px;
+	display:inline-block;
+
+	}
+
 @media (max-width: 768px) {
   #nav-page #nav-buttons {
     flex-direction: column;

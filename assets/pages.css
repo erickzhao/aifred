@@ -63,3 +63,29 @@
 .linkedin:hover {
 	color:#4EC49F;
 	}
+
+h5 {
+	font-size:40px;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:100;
+	}
+	
+h6 {
+	font-size:20px;
+	}
+
+.id {
+	width:400px;
+	margin: auto;
+    width: 50%;
+	}
+
+#idright {
+	float:right;
+	}
+
+.linkedin {
+	width:30px;
+	height:30px;
+	margin-left:520px;
+	}
