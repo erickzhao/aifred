@@ -118,10 +118,10 @@ canvas {
   #nav-page #nav-buttons {
     flex-direction: column;
     top: 50%;
-    height: 50%;
+    height: 40%;
   }
   #nav-page #nav-logo {
-    top: 0%;
+    top: -0%;
     height: 50%;
   }
   #nav-logo img {

@@ -36,10 +36,12 @@
 .team .lead {
 	text-align:center;
 }
+
 @media (min-width:767px) {
 .gen {
 	margin-top:100px;
 	}
+
 }
 .pad {
 	margin-right:50px;
@@ -74,11 +76,7 @@ h6 {
 	font-size:20px;
 	}
 
-.id {
-	width:400px;
-	margin: auto;
-    width: 50%;
-	}
+
 
 #idright {
 	float:right;
@@ -89,3 +87,11 @@ h6 {
 	height:30px;
 	margin-left:520px;
 	}
+	
+.id {
+	width:400px;
+	margin: auto;
+    width: 70%;
+	}
+
+	
