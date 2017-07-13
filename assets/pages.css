@@ -92,6 +92,7 @@ h6 {
 	width:400px;
 	margin: auto;
     width: 70%;
+    margin-bottom:100px;
 	}
 
 #footer {
@@ -121,3 +122,27 @@ h6 {
 	text-decoration:underline;
 	}
 	
+.idphoto {
+	display:inline-block; 
+	margin-bottom:-100px; 
+	border-radius:90px;
+	}
+.idphotoright {
+	display:inline-block; 
+	margin-top:-70px;
+	border-radius:90px;
+	float:right;
+	}
+
+@media (max-width:600px) {
+	.idphoto {
+	width:100%;
+	border-radius:400px;
+	margin-bottom:20px;
+	}
+	.idphotoright {
+	width:100%;
+	border-radius:400px;
+	float:none;
+	}
+	}
