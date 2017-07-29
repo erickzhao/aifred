@@ -124,12 +124,12 @@ h6 {
 	
 .idphoto {
 	display:inline-block; 
-	margin-bottom:-100px; 
+	margin-bottom:-150px; 
 	border-radius:90px;
 	}
 .idphotoright {
 	display:inline-block; 
-	margin-top:-70px;
+	margin-top:-16px;
 	border-radius:90px;
 	float:right;
 	}
@@ -146,3 +146,15 @@ h6 {
 	float:none;
 	}
 	}
+
+.linkedin_team {
+	width:40px;
+	float:right;
+	margin-top:-30px;
+	cursor:pointer;
+	}
+	
+.linkedin_teamR {
+	width:40px;
+	cursor:pointer;
+	}	
