@@ -12,6 +12,9 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href="assets/intro.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/pages.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,54 +25,146 @@
   ga('send', 'pageview');
 
 </script>
+<script type="text/javascript">
+        function toggle_visibility(id) {
+           var e = document.getElementById(id);
+           if(e.style.display == 'block')
+              e.style.display = 'none';
+           else
+              e.style.display = 'block';
+        }
+    </script>
 </head>
 
     
 <body>
 <?php include_once("analyticstracking.php") ?>
-    <div id="intro-page">
-        <div id="intro-wrapper">
-        <img src="img/logo3.png" id="intro-logo">
-        <button class="btn btn-menu" onclick="toggleVisibility()">Enter</button>
-        <p id="intro-blurb">
-            Mental health is an integral part of our well-being and how we function within society.
-            aifred aims to bring personalized treatments at scale by combining best practices from psychiatry and deep learning.
-        </p>
-        </div>
-    </div>
-
+    
+    
     <div id="nav-page">
         <canvas width="1280px" height="720px"></canvas> 
-        <div id="nav-logo">
-            <img class="align-center" src="assets/logo1.png">
-            <h1>Who are you?</h1>
+        
+        <div class="nav-logo" id="nav-logo" style="display:block;margin-top:-50px">
+            <h1 style="color:white; font-size:3em"><img class="align-center" src="assets/logo1.png">
+                <br>
+                aifred health
+                <br>
+            </h1>
+            <h2 style="color:#ccc; font-size:1.5em">
+            Using machine learning to increase<br> treatment efficacy in psychiatry.
+        </h2>
         </div>
-        
-        <div id="nav-buttons">
-            <button class="btn btn-menu" id="btn-general" onclick="location.href='general.html';">
-                General Public
-            </button>
-            <button class="btn btn-menu" id="btn-doctor" onclick="location.href='doctor.html';">
-                Physician
-            </button>
-            <button class="btn btn-menu" id="btn-researcher" onclick="location.href='researcher.html';">
-                Researcher
-            </button>
-            <button class="btn btn-menu" id="btn-investor" onclick="location.href='investor.html';">
-                Investor
-            </button>
-            <button class="btn btn-menu" id="btn-patient" onclick="location.href='patient.html';">
-                Patient
-            </button>
-        
+         <!-- General -->
+        <div class="text"  id="general-page" style="display:none">
+            <p>  
+                <a class="closebtn" onclick="toggle_visibility('general-page'); toggle_visibility('nav-logo');">X</a><br>    
+                Depression is a common, serious mental illness, that affects more than 300 million people globally 1.
+                Some patients can spend years finding the right choice for them, and many patients won’t improve after the 
+                first treatment 2. The inability to predict any given individual’s heterogeneous response to medical treatment 
+                is arguably one of the biggest bottlenecks to mental health recovery. The aifred solution will be a tool acting 
+                as a trusted advisor for healthcare professionals to optimize treatment quality and efficacy in psychiatry. 
+                Initially, we will be focusing on treatments for depression, but we plan to scale this tool to encompass all 
+                mental health conditions in order to amplify clinical utility. At its core, aifred is leveraging the collective 
+                intelligence of the scientific and medical community to bring better healthcare to everyone. 
+            </p>
         </div>
-        
-       <div id="footer">
-            <h3 id="footer-title">aifred &copy; 2017</h3>
-            <a id="footer-link" href="team.html">Meet the Team</a>
-      </div>
-    </div>
+        <!-- end -->
+
+        <!-- Physician -->
+    <div class="text" id="physician-page" style="display:none">
+            <p>
+                <a class="closebtn" onclick="toggle_visibility('physician-page'); toggle_visibility('nav-logo');">X</a><br>                        
+                Aifred acknowledges patient diversity and brings highly tailored treatments to each individual, creating an avenue 
+                for doctors to apply personalized, evidence-based medicine in its most rigorous form. Aifred will learn to predict 
+                the optimal treatment cocktail for any given patient, while minimizing adverse effects and filtering out safety concerns 
+                such drug-disease or drug-drug interactions. This in turn will lead to faster recovery or/and remission, while 
+                reducing the potential dangers that arise due to delayed treatment response, such as suicide.  With better treatment 
+                effectiveness and side-effect prediction, personalized treatments can be chosen faster, saving on costs, limiting 
+                suffering, and empowering physicians and their patients. 
+                <br>
+                <a href="general.html#link1">Find out more...</a>
+            </p>
+        </div>
+        <!-- end -->
+
+
+    <!-- Researcher -->
+    <div class="text" id="researcher-page" style="display:none">
+            <p>
+                <a class="closebtn" onclick="toggle_visibility('researcher-page'); toggle_visibility('nav-logo');">X</a><br>                        
+                The aifred solution is a clinical decision aid system built with machine learning techniques, aimed at helping 
+                clinicians choose the most effective treatments for mental health problems, given individual patient characteristics, 
+                in order to reduce time to remission of symptoms as much as possible while minimizing adverse side effects. By 
+                training our model on large datasets, which include information about socio-demographic factors, symptom profiles, 
+                as well as genetic, metabolic, endocrine, immune, and neuroimaging data, aifred will learn to predict the optimal 
+                treatment cocktail for any given patient, with the patient outcomes feeding back into aifred’s database to improve 
+                its predictive power.
+                <br>
+                <a href="general.html#link2">Find out more...</a>
+            </p>
+        </div>
+        <!-- end -->
     
+    
+        <!-- Investor -->
+        <div class="text" id="investor-page" style="display:none">
+            <p>
+                <a class="closebtn" onclick="toggle_visibility('investor-page'); toggle_visibility('nav-logo');">X</a><br>                        
+                As a valuable resource for medical professionals, aifred has potential to be a fundamental step forward in an area 
+                desperately in need of innovation, with massive implications for future development and refinement as well. Artificial 
+                intelligence provides uncontested potential to integrate data analysis and healthcare, creating the ultimate network to 
+                fight mental illness based on the work of doctors, researchers and patients themselves. By forming connections between 
+                diverse experts in the field of mental health, aifred itself has innate long term relevancy and answers the call for 
+                action in addressing the issue of mental health treatment. 
+                <br>
+                <a href="general.html#link3">Find out more...</a>
+            </p>
+        </div>
+        <!-- end -->
+    
+    
+        <!-- Patient -->
+        <div class="text" id="patient-page" style="display:none">
+            <p>
+                <a class="closebtn" onclick="toggle_visibility('patient-page'); toggle_visibility('nav-logo');">X</a><br>                        
+                For a patient with depression, trying a new treatment means several weeks of therapy or medication titration to start 
+                seeing if there is a positive effect. This is time lost in the patient’s life - time that is potentially away from work 
+                and time when they are not able to be fully present in their families’ lives. This is where aifred comes in. The aifred 
+                solution is comprehensive, evidence-based tool for healthcare professionals to assist in rapidly selecting the most 
+                effective treatments for any given patient, as early on in their clinical course as possible, in order to reduce time 
+                to remission of symptoms as much as possible while minimizing burdensome side effects.
+                <br>
+                <a href="general.html#link4">Find out more...</a>
+            </p>
+        </div>
+        <!-- end -->
+        
+        <!-- who are you buttons -->
+    <div id="nav-buttons" >
+            <button class="btn btn-menu" id="btn-general" onclick="toggle_visibility('general-page'); toggle_visibility('nav-logo');">
+                About Us
+            </button>
+            <button class="btn btn-menu" id="btn-doctor" onclick="toggle_visibility('physician-page'); toggle_visibility('nav-logo');">
+                Technology
+            </button>
+            <button class="btn btn-menu" id="btn-researcher" onclick="toggle_visibility('researcher-page'); toggle_visibility('nav-logo');">
+                Product
+            </button>
+            <button class="btn btn-menu" id="btn-investor" onclick="toggle_visibility('investor-page'); toggle_visibility('nav-logo');">
+                Research
+            </button>
+            <button class="btn btn-menu" id="btn-patient" onclick="toggle_visibility('patient-page'); toggle_visibility('nav-logo');">
+                Clinical
+            </button>
+        </div>
+       
+        
+        
+    </div>
+
+        <!-- end -->
+
+
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

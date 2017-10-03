@@ -66,7 +66,7 @@
 	</div>
 	
 	<!-- NavBar-->
-	<nav class="navbar-default" role="navigation">
+	<nav class="navbar-default" role="navigation" style="background:#354254;">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -75,18 +75,18 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><img src="img/logo.png" width="50px" height="50px" style="margin-top:-15px;"> </a><h4 style="margin-left:80px;margin-top:20px;">General</h4>
+				<a class="navbar-brand" href="index.html"><img src="img/logo.png" width="50px" height="50px" style="margin-top:-15px;"> </a><h4 style="margin-left:80px;margin-top:20px;color:white;font-weight:500">aifred health</h4>
 			</div>
 
 			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav" >
 					
-					<li class="menuItem"><a href="#link1">About Us</a></li>
-					<li class="menuItem"><a href="#link2">Technology</a></li>
-					<li class="menuItem"><a href="#link3">Grand Challenge</a></li>
-					<li class="menuItem"><a href="#link4">What We Do</a></li>
-					<li class="menuItem"><a href="#link5">Mentors & Partners</a></li>
-					<li class="menuItem"><a href="#contact">Contact</a></li>
+					<li class="menuItem"><a href="#link1" style="color:white">Technology</a></li>
+					<li class="menuItem"><a href="#link2" style="color:white">Product</a></li>
+					<li class="menuItem"><a href="#link3" style="color:white">Research</a></li>
+					<li class="menuItem"><a href="#link4" style="color:white">Clinical</a></li>
+					<li class="menuItem"><a href="#link5" style="color:white">Partners</a></li>
+					<li class="menuItem"><a href="#contact" style="color:white">Contact Us</a></li>
 				</ul>
 			</div>
 		   
@@ -95,10 +95,17 @@
 	
 	
 	<!-- FullScreen -->
-    <div class="intro-header" style="background:url(img/back.jpg); background-size:cover;">
-			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s"><img width="25%" height="20%" style="min-width:300px" src="img/logo3.png"></h1>
-			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s" id="h3sub">Clinical Decision Aid for Increased Treatment Efficacy</h3>
-        <!-- /.container -->
+    <div class="intro-header" style="background:url(img/backnode.png); background-size:cover;">
+		<div class="nav-logo" id="nav-logo" style="display:block;margin-top:-50px">
+				<h1 style="color:white; font-size:3em; font-weight:300"><img class="align-center" src="assets/logo1.png" height="100px">
+					<br>
+					aifred health
+					<br>
+				</h1>
+				<h2 style="color:#ccc; font-size:1.5em;font-weight:300">
+				Using machine learning to increase<br> treatment efficacy in psychiatry.
+			</h2>
+			</div>      <!-- /.container -->
 		
     </div>
 	
@@ -110,13 +117,12 @@
         <div class="container">
 			
             <div class="row">
-			
 				<div class="col-sm-6 pull-right wow fadeInRightBig" align="center">
                     <img class="img-responsive" src="img/stock4.png" alt="">
                 </div>
 				
                 <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-                    <h3 class="section-heading">About Us</h3>
+                    <h3 class="section-heading">Technology</h3>
                     <p class="lead">
 						We're a team of neuroscientists, medical professionals, 
 						computer scientists, entrepreneurs but most importantly firm 
@@ -130,8 +136,72 @@
 						NeuroTechX competition that invited participation from top 
 						universities across Eastern Canada.
 					</p>
-				</div>   
-            </div>
+				</div>
+			</div>
+			<br><br><br>
+			<h3 align="center">Technology Team</h3>
+			<br>
+			<div align="center">
+			<div class="teammem">
+				<img class="idphoto" src="img/team/robert.jpg" align="center" width="150">
+				<br>
+				<h5>Robert Fratila</h5>
+				<h4>Chief Technology Officer</h4>
+				<br>
+				<img class="linkedin_team" src="img/linkedin.png" onClick="location.href='https://www.linkedin.com/in/robertfratila/'">
+				<img id="myBtn1" class="linkedin_team" src="img/profile.png" onClick="location.href='https://www.linkedin.com/in/robertfratila/'">
+					
+				<!-- The Modal -->
+			<div id="myModal1" class="modal">
+		
+		  <!-- Modal content -->
+		  <div class="modal-content">
+			<span class="close1" id="close">&times;</span>
+			<h5>Robert Fratila</h5>
+			<p class="lead">Robert Fratila is the Manager for the Machine 
+					Learning and Technology division at aifred. He is very passionate 
+					about combining medicine and AI throughout his work and research. 
+					His work as a software developer at the Montreal Neurological 
+					Institute, integrating state-of-the-art machine learning models in 
+					health care, specifically brain imaging, has given him lots of 
+					experience in finding efficient solutions to complex problems.
+					<br>
+					In his spare time, he has worked on several projects including a 
+					search engine, a brain-state classifier, full computer vision 
+					packages for autonomous underwater vehicles and a program that 
+					creates a predictive model for future patients diagnosed with 
+					Leukemia, just to name a few.
+					<br>
+					He has dedicated much of his time to giving workshops and talks 
+					about his work to student groups at McGill including the 
+					Neuroscience Undergraduates of McGill (NUM) and McGill Women in 
+					Computer Science (McWiCS). He is commited to spreading knowledge 
+					and demystifying the wonderful field of machine learning.
+					</p>
+		  </div>
+		
+		</div>	
+		
+				<!-- end Modal -->
+
+			</div>	
+			<div class="teammem">
+					<img class="idphoto" src="img/team/davidb.jpg" width="150">
+					<br>				
+					<h5>David Belgrod</h5>
+					<h4>Developer</h4>
+					<br>
+					<img class="linkedin_team" src="img/linkedin.png" onClick="location.href='https://www.linkedin.com/in/davidbelgrod/'">                    						
+			</div>	
+			<div class="teammem">
+					<img class="idphoto" src="img/team/emmanuel.jpg" width="150">
+					<br>				
+					<h5>Emmanuel Bengio</h5>
+					<h4>Developer</h4>
+					<br>
+					<img class="linkedin_team" src="img/linkedin.png" onClick="location.href='https://www.linkedin.com/in/emmanuel-bengio-0653447b/'">                    						
+			</div>	
+			</div>			
         </div>
         <!-- /.container -->
     </div>
@@ -146,7 +216,7 @@
                 </div>
 				
                 <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="200">   
-                    <h3 class="section-heading">Technology</h3>
+                    <h3 class="section-heading">Product</h3>
                     <p class="lead">
 					Using the most cutting-edge machine learning techniques combined with 
 					the best in class research and evaluation measures, we’re building 
@@ -159,6 +229,95 @@
 					</p>
 				</div>  			
 			</div>
+			<br><br><br>
+			<h3 align="center">Product Team</h3>
+			<br>
+			<div align="center">
+			<div class="teammem">
+				<img class="idphoto" src="img/team/nykan.jpg" align="center" width="150">
+				<br>
+				<h5>Nykan Mirchi</h5>
+				<h4>Director of Product Development</h4>
+				<br>
+				<img class="linkedin_team" src="img/linkedin.png" onClick="location.href='https://www.linkedin.com/in/nykan-mirchi-b70090b1/'">
+				<img id="myBtn2" class="linkedin_team" src="img/profile.png">				
+				<!-- The Modal -->
+			<div id="myModal2" class="modal">
+					
+					  <!-- Modal content -->
+					  <div class="modal-content">
+						<span class="close2" id="close">&times;</span>
+						<h5>Nykan Mirchi</h5>
+						<p class="lead">Nykan is currently completing a bachelor in 
+								biochemistry and neuroscience at McGill University. He has 
+								developed considerable programming and research experience in the 
+								field of psychiatry and neuroscience. Some of his most notable work 
+								includes research on the cognitive and physiological effects of 
+								marijuana at UCLA, in addition to a study of brain networks in 
+								mood disorders at the Montreal Neurological Institute. These 
+								experiences have developed his passion and understanding of the 
+								power of technology in neuroscience, psychiatry and medicine.
+								<br>
+								At aifred, he collaborates extensively with the Design team and 
+								Machine-Learning engineers to develop a user-friendly product and 
+								front-end interface of the aifred application. He also develops and maintains 
+								the aifred website.</p>
+					  </div>
+					
+					</div>	
+					
+							<!-- end Modal -->
+			</div>	
+			<div class="teammem">
+					<img class="idphoto" src="img/team/steven.jpg" width="150">
+					<br>				
+					<h5>Steven Zhang</h5>
+					<h4>Developer</h4>
+					<br>
+					<img class="linkedin_team" src="img/linkedin.png" onClick="location.href='https://www.linkedin.com/in/steven-zhang-30530398/'">                    						
+					<img id="myBtn3" class="linkedin_team" src="img/profile.png">				
+					<!-- The Modal -->
+				<div id="myModal3" class="modal">
+						
+						  <!-- Modal content -->
+						  <div class="modal-content">
+							<span class="close3" id="close">&times;</span>
+							<h5>Steven Zhang</h5>
+							<p class="lead">Robert Fratila is the Manager for the Machine 
+									Learning and Technology division at aifred. He is very passionate 
+									about combining medicine and AI throughout his work and research. 
+									His work as a software developer at the Montreal Neurological 
+									Institute, integrating state-of-the-art machine learning models in 
+									health care, specifically brain imaging, has given him lots of 
+									experience in finding efficient solutions to complex problems.
+									<br>
+									In his spare time, he has worked on several projects including a 
+									search engine, a brain-state classifier, full computer vision 
+									packages for autonomous underwater vehicles and a program that 
+									creates a predictive model for future patients diagnosed with 
+									Leukemia, just to name a few.
+									<br>
+									He has dedicated much of his time to giving workshops and talks 
+									about his work to student groups at McGill including the 
+									Neuroscience Undergraduates of McGill (NUM) and McGill Women in 
+									Computer Science (McWiCS). He is commited to spreading knowledge 
+									and demystifying the wonderful field of machine learning.
+									</p>
+						  </div>
+						
+						</div>	
+						
+								<!-- end Modal -->
+				</div>	
+			<div class="teammem">
+					<img class="idphoto" src="img/team/sabrina.jpg" width="150">
+					<br>				
+					<h5>Sabrina Knappe</h5>
+					<h4>Designer</h4>
+					<br>
+					<img class="linkedin_team" src="img/linkedin.png" onClick="location.href='https://www.linkedin.com/in/sabrina-knappe-851370136/'">                    						
+			</div>	
+			</div>	
         </div>
     </div>
 
@@ -173,7 +332,7 @@
                 </div>
 			 
                 <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-                    <h3 class="section-heading">Grand Challenge</h3>
+                    <h3 class="section-heading">Research</h3>
                     <p class="lead">
 					The aifred solution will help to deliver exponential gains to both doctors and 
 					patients. The aifred solution will be a trusted advisor to the doctor aiding them 
@@ -189,7 +348,119 @@
 					manner.
 					</p>
 				</div>           
-            </div>
+			</div>
+			<br><br><br>
+			<h3 align="center">Research Team</h3>
+			<br>
+			<div align="center">
+			<div class="teammem">
+				<img class="idphoto" src="img/team/kelly.jpg" align="center" width="150">
+				<br>
+				<h5>Kelly Perlman</h5>
+				<h4>Director of Scientific Content</h4>
+				<br>
+				<img class="linkedin_team" src="img/linkedin.png" onClick="location.href='https://www.linkedin.com/in/kelly-perlman-aa2a74132/'">
+				<img id="myBtn4" class="linkedin_team" src="img/profile.png">				
+				<!-- The Modal -->
+			<div id="myModal4" class="modal">
+					
+					  <!-- Modal content -->
+					  <div class="modal-content">
+						<span class="close4" id="close">&times;</span>
+						<h5>Kelly Perlman</h5>
+						<p class="lead">Kelly Perlman is a co-founder of aifred. She has 
+								the primary goal of ensuring that every step in the development of 
+								aifred is firmly grounded in science in order to identify strong, 
+								accurate, and relevant predictors of treatment response. Kelly is 
+								a neuroscience student at McGill University, and has been working 
+								in a neuroimaging laboratory since 2014, where she has gained 
+								technical skills and research experience. Additionally, she is the 
+								VP external of McGill’s neurotechnology club (MENTAL), and is 
+								immensely passionate about all things science.
+								</p>
+					  </div>
+					
+					</div>	
+					
+							<!-- end Modal -->
+			</div>	
+			<div class="teammem">
+					<img class="idphoto" src="img/team/colleen.jpg" width="150">
+					<br>				
+					<h5>Colleen Rollins</h5>
+					<h4>Researcher</h4>
+					<br>
+					<img class="linkedin_team" src="img/linkedin.png" onClick="location.href='https://www.linkedin.com/in/colleen-rollins-b3b126b2/'">                    						
+					<img id="myBtn5" class="linkedin_team" src="img/profile.png">				
+					<!-- The Modal -->
+				<div id="myModal5" class="modal">
+						
+						  <!-- Modal content -->
+						  <div class="modal-content">
+							<span class="close5" id="close">&times;</span>
+							<h5>Colleen Rollins</h5>
+							<p class="lead">
+									As a Researcher for aifred’s Research team, Colleen 
+									is investigating predictors for antidepressant treatment response 
+									in major depressive disorder. She recently completed a BSc in 
+									Neuroscience at McGill University, during which she became involved 
+									in research ranging from auditory brain plasticity, to modifiable 
+									risk factors for Alzheimer’s disease, to computational genetics, 
+									to social factors influencing the etiology of schizophrenia, with 
+									a particular interest in using computational tools to characterize 
+									alterations in brain anatomy related to different disorders of the 
+									brain. In October 2017, Colleen will begin a PhD in Psychiatry at 
+									the University of Cambridge. Ultimately, her overarching goal is to 
+									translate research findings into clinical practice to make tangible 
+									improvements in patient care. 
+									</p>
+						  </div>
+						
+						</div>	
+						
+								<!-- end Modal -->
+				</div>	
+			<div class="teammem">
+					<img class="idphoto" src="img/team/ellie.jpg" width="150">
+					<br>				
+					<h5>Ellie Brown</h5>
+					<h4>Researcher</h4>
+					<br>
+					<img class="linkedin_team" src="img/linkedin.png" onClick="location.href='https://www.linkedin.com/in/sabrina-knappe-851370136/'">                    						
+			</div>
+			<div class="teammem">
+					<img class="idphoto" src="img/team/eunice.jpg" width="150">
+					<br>				
+					<h5>Eunice You</h5>
+					<h4>Researcher</h4>
+					<br>
+					<img class="linkedin_team" src="img/linkedin.png" onClick="location.href='https://www.linkedin.com/in/eunice-linh-you-63a91775/'">                    						
+			</div>	
+			<div class="teammem">
+					<img class="idphoto" src="img/team/jingla.jpg" width="150">
+					<br>				
+					<h5>Jingla-Fri Tunteng</h5>
+					<h4>Researcher</h4>
+					<br>
+					<img class="linkedin_team" src="img/linkedin.png" onClick="location.href='https://www.linkedin.com/in/eunice-linh-you-63a91775/'">                    						
+			</div>	
+			<div class="teammem">
+					<img class="idphoto" src="img/team/myriam.jpg" width="150">
+					<br>				
+					<h5>Myriam Tanguay-Sela</h5>
+					<h4>Researcher</h4>
+					<br>
+					<img class="linkedin_team" src="img/linkedin.png" onClick="location.href='https://www.linkedin.com/in/eunice-linh-you-63a91775/'">                    						
+			</div>	
+			<div class="teammem">
+					<img class="idphoto" src="img/team/jingla.jpg" width="150">
+					<br>				
+					<h5>Raymond You</h5>
+					<h4>Researcher</h4>
+					<br>
+					<img class="linkedin_team" src="img/linkedin.png" onClick="location.href='https://www.linkedin.com/in/eunice-linh-you-63a91775/'">                    						
+			</div>	
+			</div>	
         </div>
 
     </div>
@@ -205,7 +476,7 @@
                 </div>
 			 
                 <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="200">   
-                    <h3 class="section-heading">What We Do</h3>
+                    <h3 class="section-heading">Clinical</h3>
                     <p class="lead">
 					The aifred solution combines deep research with innovative technical approaches to 
 					help increase treatment efficacy in the field of psychiatry - we help 
@@ -234,7 +505,7 @@
 
         <div class="container">
             <div class="row team">
-			 <h3 class="section-heading" align="center">Mentors & Partners</h3>
+			 <h3 class="section-heading" align="center">Partners</h3>
                     <p class="lead" align="center">
                     <img class="pad" src="img/mental.png" width="150" height="150">
                     <img class="pad" src="img/mcgill.png" width="232.5" height="64">
@@ -259,7 +530,7 @@
 						</div>
 
 	<!-- Contact -->
-	<div id="contact" class="content-section-c">
+	<div id="contact" class="content-section-c" style="background:#354254;">
 		<div class="container">
 			<div class="row">
 			
@@ -326,8 +597,14 @@
       <div class="container">
         <div class="row">
         <div class="footer">
-            <h3 id="footer-title">aifred &copy; 2017</h3>
-            <a id="footer-link" href="team.html">Meet the Team</a>
+            <h3 id="footer-title">aifred health &copy; 2017</h3>
+			<a id="footer-link" href="general.html#link6">Contact Us</a>
+			<a id="footer-link" href="general.html#link5">Partners</a>
+			<a id="footer-link" href="general.html#link4">Clinical</a>
+			<a id="footer-link" href="general.html#link3">Research</a>
+            <a id="footer-link" href="general.html#link2">Product</a>
+            <a id="footer-link" href="general.html#link1">Technology</a>
+			<a id="footer-link" href="index.html">Home</a>
           </div> <!-- /col-xs-7 -->
 	
           
@@ -362,6 +639,9 @@
 	<!-- Magnific Popup core JS file -->
 	<script src="js/jquery.magnific-popup.js"></script> 
 	
+	
+	
+	<script src="scripts/modal.js"></script>
 </body>
 
 </html>

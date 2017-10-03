@@ -50,30 +50,32 @@ body {
 #nav-page {
   width: 100%;
   height: 100%;
-  position: fixed;
+  position:fixed;
   top: 0;
   left: 0;
   transition: opacity 0.5s linear;
 }
 
 canvas {
-  position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-#nav-logo {
+.nav-logo {
   z-index: 10;
-  position: relative;
+  position: absolute;
+  top: 5%;
+  margin:auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 70%;
+  width:100%;
 }
 
-#nav-logo img {
+.nav-logo img {
   width: 300px;
   height: 300px;
 }
@@ -88,12 +90,10 @@ canvas {
   align-items: center;
 }
 
-#nav-page #footer {
+#nav-page #footer-home {
 	position: absolute;
 	width:100%;
 	height:50px;
-	background-color:#293340;
-	color:white;
 	bottom:0;	
 	}
 #nav-page #footer-title {
@@ -138,6 +138,14 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 12;
+  color:#ccc;
+  letter-spacing:2px;
+  font-weight:500;
+  text-align:center;
+}
+
 .btn.btn-menu {
   background: #354254;
   border: 1px solid #4EC49F;
@@ -161,4 +169,57 @@ h1 {
 
 .navbar-default {
   background-color: #354254;
+  position: fixed;
+  top:0;
 }
+
+
+
+.text {
+  z-index: 10;
+  position: absolute;
+  top: 5%;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 40%;
+  width:80%;
+  margin-left:10%;
+  color:#ccc;
+}
+
+.text p {
+  margin:50px;
+  font-size:18px;
+  background:#354254;
+  border-radius:40px;
+  border:30px solid #354254;
+
+}
+
+.btn.btn-circle {
+  display: block;
+  margin: auto;
+  border:1px solid white;
+  width:120px;
+  height:60px;
+  border-radius:20%;
+  background:white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  
+}
+
+.closebtn {
+  color:white;
+  font-size:20px;
+}
+
+.closebtn:hover {
+  cursor:pointer;
+  color:white;
+  text-decoration:none;  
+}
+
