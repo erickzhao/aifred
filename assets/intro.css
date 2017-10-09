@@ -215,6 +215,8 @@ h2 {
 .closebtn {
   color:white;
   font-size:20px;
+  float:right;
+  margin-top:-10px;
 }
 
 .closebtn:hover {
@@ -223,3 +225,48 @@ h2 {
   text-decoration:none;  
 }
 
+
+#general-page p {
+  margin:50px;
+  font-size:18px;
+  background:#354254;
+  border-radius:40px;
+  border:30px solid #354254;
+  color:white;
+}
+
+#physician-page p {
+  margin:50px;
+  font-size:18px;
+  background:#354254;
+  border-radius:40px;
+  border:30px solid #354254;
+  color:white;
+}
+
+#researcher-page p {
+  margin:50px;
+  font-size:18px;
+  background:#354254;
+  border-radius:40px;
+  border:30px solid #354254;
+  color:white;
+}
+
+#investor-page p {
+  margin:50px;
+  font-size:18px;
+  background:#354254;
+  border-radius:40px;
+  border:30px solid #354254;
+  color:white;
+}
+
+#patient-page p {
+  margin:50px;
+  font-size:18px;
+  background:#354254;
+  border-radius:40px;
+  border:30px solid #354254;
+  color:white;
+}

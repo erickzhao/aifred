@@ -247,6 +247,7 @@ h6 {
 	margin:15px;
 	display:inline-block;
 	align-content: center;
+	vertical-align: top;
 }
 
 .modal {
