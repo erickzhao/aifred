@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>aifred</title>
+    <title>aifred health</title>
     <!--Stylesheets-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -12,6 +12,9 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href="assets/intro.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/pages.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,54 +25,132 @@
   ga('send', 'pageview');
 
 </script>
+<script type="text/javascript">
+        function toggle_visibility(id) {
+           var e = document.getElementById(id);
+           if(e.style.display == 'block')
+              e.style.display = 'none';
+           else
+              e.style.display = 'block';
+        }
+    </script>
 </head>
 
     
 <body>
 <?php include_once("analyticstracking.php") ?>
-    <div id="intro-page">
-        <div id="intro-wrapper">
-        <img src="img/logo3.png" id="intro-logo">
-        <button class="btn btn-menu" onclick="toggleVisibility()">Enter</button>
-        <p id="intro-blurb">
-            Mental health is an integral part of our well-being and how we function within society.
-            aifred aims to bring personalized treatments at scale by combining best practices from psychiatry and deep learning.
-        </p>
-        </div>
-    </div>
-
+    
+    
     <div id="nav-page">
         <canvas width="1280px" height="720px"></canvas> 
-        <div id="nav-logo">
-            <img class="align-center" src="assets/logo1.png">
-            <h1>Who are you?</h1>
+        
+        <div class="nav-logo" id="nav-logo" style="display:block;margin-top:-50px">
+            <h1 style="color:white; font-size:3em"><img class="align-center" src="assets/logo1.png">
+                <br>
+                aifred health
+                <br>
+            </h1>
+            <h2 style="color:#ccc; font-size:1.5em">
+            Using machine learning to increase<br> treatment efficacy in psychiatry.
+        </h2>
         </div>
-        
-        <div id="nav-buttons">
-            <button class="btn btn-menu" id="btn-general" onclick="location.href='general.html';">
-                General Public
-            </button>
-            <button class="btn btn-menu" id="btn-doctor" onclick="location.href='doctor.html';">
-                Physician
-            </button>
-            <button class="btn btn-menu" id="btn-researcher" onclick="location.href='researcher.html';">
-                Researcher
-            </button>
-            <button class="btn btn-menu" id="btn-investor" onclick="location.href='investor.html';">
-                Investor
-            </button>
-            <button class="btn btn-menu" id="btn-patient" onclick="location.href='patient.html';">
-                Patient
-            </button>
-        
+         <!-- General -->
+        <div  id="general-page" style="display:none" class="modal">
+            <p>  
+                <a class="closebtn" onclick="toggle_visibility('general-page'); toggle_visibility('nav-logo');">X</a><br>    
+                Depression is a serious mental illness that globally affects more than 300 million people over the course their lives (1).
+                Some patients can spend years finding the right treatment regimen for them, and many patients won’t improve after the first treatment (2). The inability to predict any given individual’s unique response to medical treatment is arguably one of the biggest bottlenecks to mental health recovery. <br><br>
+                This is where aifred comes in. The aifred solution will be a clinical software tool acting as a trusted advisor for healthcare professionals to optimize treatment quality and efficacy for mental health. This tool is a comprehensive, evidence-based decision aid for healthcare professionals to assist in rapidly selecting the most effective treatments for any given patient, as early on in their clinical course as possible, in order to reduce time to remission of symptoms as much as possible while minimizing burdensome side effects.
+                Initially, we will be focusing on treatments for depression, but we plan to scale aifred to encompass all mental health conditions in order to amplify clinical utility. At its core, aifred is leveraging the collective intelligence of the scientific and medical community to bring better healthcare to all. 
+                 <br><br>
+                 1. Depression. (n.d.). Retrieved August 16, 2017, from http://www.who.int/mediacentre/factsheets/fs369/en/
+                 <br>
+                 2. Rush, A. J., Fava, M., Wisniewski, S. R., Lavori, P. W., Trivedi, M. H., Sackeim, H. A., . . . for the, S. D. I. G. (2004). Sequenced treatment alternatives to relieve depression (STAR*D): rationale and design. Controlled Clinical Trials, 25(1), 119-142. doi:10.1016/S0197-2456(03)00112-0
+                <br><br>                 
+                <a href="general.html#about">Find out more...</a>                
+            </p>
         </div>
-        
-       <div id="footer">
-            <h3 id="footer-title">aifred &copy; 2017</h3>
-            <a id="footer-link" href="team.html">Meet the Team</a>
-      </div>
-    </div>
+        <!-- end -->
+
+        <!-- Physician -->
+    <div class="modal" id="physician-page" style="display:none">
+            <p>
+                <a class="closebtn" onclick="toggle_visibility('physician-page'); toggle_visibility('nav-logo');">X</a><br>                        
+
+
+                Our tech team includes experienced machine learning engineers and researchers from McGill University and the Montreal Neurological Institute. We are constantly prototyping and refining newly published techniques to maintain state-of-the-art methods. By working closely with both the product and research teams, we are able to implement critical domain knowledge in order to ensure a well-integrated product.
+                <br><br>
+                <a href="general.html#link1">Find out more...</a>
+            </p>
+        </div>
+        <!-- end -->
+
+
+    <!-- Researcher -->
+    <div class="modal" id="researcher-page" style="display:none">
+            <p>
+                <a class="closebtn" onclick="toggle_visibility('researcher-page'); toggle_visibility('nav-logo');">X</a><br>                        
+                The aifred software solution will be available on a licensed basis to healthcare professionals. In addition to our predictive model, the product will contain an intuitive user interface with an integrated electronic health record.
+                <br><br>
+                <a href="general.html#link2">Find out more...</a>
+            </p>
+        </div>
+        <!-- end -->
     
+    
+        <!-- Investor -->
+        <div class="modal" id="investor-page" style="display:none">
+            <p>
+                <a class="closebtn" onclick="toggle_visibility('investor-page'); toggle_visibility('nav-logo');">X</a><br>                        
+            
+                We are analyzing socio-demographic factors, symptom profiles, genetic, metabolic, endocrine, immune, and neuroimaging data. aifred will learn to predict the optimal treatment regimen for any given patient.                 
+                <br><br>
+                <a href="general.html#link3">Find out more...</a>
+            </p>
+        </div>
+        <!-- end -->
+    
+    
+        <!-- Patient -->
+        <div class="modal" id="patient-page" style="display:none">
+            <p>
+                <a class="closebtn" onclick="toggle_visibility('patient-page'); toggle_visibility('nav-logo');">X</a><br>                        
+          
+
+                While a range of effective treatments for depression do exist, these are not equivalently effective for all patients. Some patients can spend years finding the right combination of treatments from the dozens of medications, multiple psychotherapies, and five neurostimulation techniques available. 
+                
+                <br><br>
+                <a href="general.html#link4">Find out more...</a>
+            </p>
+        </div>
+        <!-- end -->
+        
+        <!-- who are you buttons -->
+    <div id="nav-buttons" >
+            <button class="btn btn-menu" id="btn-general" onclick="toggle_visibility('general-page'); toggle_visibility('nav-logo');">
+                About Us
+            </button>
+            <button class="btn btn-menu" id="btn-doctor" onclick="toggle_visibility('physician-page'); toggle_visibility('nav-logo');">
+                Technology
+            </button>
+            <button class="btn btn-menu" id="btn-researcher" onclick="toggle_visibility('researcher-page'); toggle_visibility('nav-logo');">
+                Product
+            </button>
+            <button class="btn btn-menu" id="btn-investor" onclick="toggle_visibility('investor-page'); toggle_visibility('nav-logo');">
+                Research
+            </button>
+            <button class="btn btn-menu" id="btn-patient" onclick="toggle_visibility('patient-page'); toggle_visibility('nav-logo');">
+                Clinical
+            </button>
+        </div>
+       
+        
+        
+    </div>
+
+        <!-- end -->
+
+
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

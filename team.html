@@ -561,7 +561,8 @@
         <div class="container">
 				<div class="row">
 				                    <h3 align="center" class="section-heading">Media</h3>
-<div align="center">
+
+	                <div class="col-sm-6 wow fadeInLeftBig team" data-animation-delay="200" align="center">
 	             	<iframe width="100%" height="315" src="https://www.youtube.com/embed/WivXdIGgyic" frameborder="0" allowfullscreen></iframe>
 	             	<p class="lead">The aifred solution pitch for the 2017 MIT Solve Competition featuring Abhishek Gupta, Project Leader, and Dr. David Benrimoh.</p>
                 	</div>
@@ -574,29 +575,82 @@
                 	<p class="lead">Interview with Dr. David Benrimoh, Content Expert, aifred at the AI for GOOD Global Summit, ITU, Geneva, Switzerland.</p>
                 	</div>
                 	
-                	
-                	<!-- Start WOWSlider.com BODY section -->
-<div id="wowslider-container1">
-<div class="ws_images"><ul>
-		<li><img src="data1/images/media1.jpg" alt="Abhishek Gupta & Yoshua Bengio" title="Abhishek Gupta & Yoshua Bengio" id="wows1_0"/>C2 Montreal 2017</li>
-		<li><a href="http://wowslider.net"><img src="data1/images/media2.jpg" alt="html slider" title="Abhishek Gupta & Jurgen Schmidhuber" id="wows1_1"/></a>AI for GOOD Summit, Geneva</li>
-		<li><img src="data1/images/media3.jpg" alt="Abhishek Gupta, Yoshua Bengio & Dr. David Benrimoh" title="Abhishek Gupta, Yoshua Bengio & Dr. David Benrimoh" id="wows1_2"/>C2 Montreal 2017</li>
-	</ul></div>
-	<div class="ws_bullets"><div>
-		<a href="#" title="Abhishek Gupta & Yoshua Bengio"><span><img src="data1/tooltips/media1.jpg" alt="Abhishek Gupta & Yoshua Bengio"/>1</span></a>
-		<a href="#" title="Abhishek Gupta & Jurgen Schmidhuber"><span><img src="data1/tooltips/media2.jpg" alt="Abhishek Gupta & Jurgen Schmidhuber"/>2</span></a>
-		<a href="#" title="Abhishek Gupta, Yoshua Bengio & Dr. David Benrimoh"><span><img src="data1/tooltips/media3.jpg" alt="Abhishek Gupta, Yoshua Bengio & Dr. David Benrimoh"/>3</span></a>
-	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap carousel</a> by WOWSlider.com v8.8m</div>
-<div class="ws_shadow"></div>
-</div>	
-<script type="text/javascript" src="engine1/wowslider.js"></script>
-<script type="text/javascript" src="engine1/script.js"></script>
-<!-- End WOWSlider.com BODY section -->
+                	<div class="col-sm-6 wow fadeInLeftBig team" data-animation-delay="200" align="center">
+						
 
+<div class="slideshow-container" width="50%" height="315px">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/caroussel/car1.jpg" style="height:300px" >
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/caroussel/car2.jpg" style="height:300px">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/caroussel/car3.jpg" style="height:300px">
+    <div class="text">Caption Three</div>
+  </div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+					</div>
                 </div>
         </div>
 </div>
 
+<script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
 
 
 	<!-- Screenshot -->
