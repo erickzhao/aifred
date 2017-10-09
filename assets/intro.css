@@ -123,11 +123,22 @@ canvas {
   #nav-page #nav-logo {
     top: -0%;
     height: 50%;
+    z-index: 10;
+    position: absolute;
+    top: 5%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
   #nav-logo img {
     width: 200px;
     height: 200px;
   }
+ h2 {
+  display:none;
+ }
 }
 
 h1 {
