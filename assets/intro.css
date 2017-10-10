@@ -55,7 +55,9 @@ body {
   left: 0;
   transition: opacity 0.5s linear;
 }
-
+.modal {
+  text-align:justify;
+}
 canvas {
   top: 0;
   width: 100%;
@@ -139,7 +141,40 @@ canvas {
  h2 {
   display:none;
  }
- 
+}
+
+
+@media (max-width: 500px) {
+  #general-page {
+    width:126%;
+    left:-13%;
+    height:120%;
+    margin-top:-25%;
+   }
+   #physician-page {
+    width:126%;
+    left:-13%;
+    height:120%;
+    margin-top:-25%;
+   }
+   #researcher-page {
+    width:126%;
+    left:-13%;
+    height:120%;
+    margin-top:-25%;
+   }
+   #investor-page {
+    width:126%;
+    left:-13%;
+    height:120%;
+    margin-top:-25%;
+   }
+   #patient-page {
+    width:126%;
+    left:-13%;
+    height:120%;
+    margin-top:-25%;
+   }
 }
 
 h1 {
