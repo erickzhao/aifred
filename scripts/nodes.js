@@ -123,7 +123,7 @@ function draw() {
       var ball2 = balls[index2];
       var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
         if (dist < 100) {
-          ctx.strokeStyle = "#4EC49F";
+          ctx.strokeStyle = "#84C4B0";
           ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 150);
           ctx.lineWidth = "2px";
           ctx.moveTo((0.5 + ball.x) | 0, (0.5 + ball.y) | 0);
@@ -134,7 +134,7 @@ function draw() {
       var ball3 = staticballs[index3];
       var dist = Math.hypot(ball.x - ball3.x, ball.y - ball3.y);
         if (dist < 100) {
-          ctx.strokeStyle = "#4EC49F";
+          ctx.strokeStyle = "#84C4B0";
           ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 50);
           ctx.lineWidth = "20px";
           ctx.moveTo((0.5 + ball.x) | 0, (0.5 + ball.y) | 0);
