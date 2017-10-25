@@ -44,10 +44,14 @@
     <div id="nav-page">
         <canvas width="1280px" height="720px"></canvas> 
         
-        <div class="nav-logo" id="nav-logo" style="display:block;margin-top:20px">
+        <div class="nav-logo" id="nav-logo" style="margin-top:20px">
+                <div class="smallScreen">
+                        <img src="img/logo1.png"><br>                        
+                        <h1 style="color:#4EC49F;">ai</h1><h1 style="color:white;">fred health</h1>
+                    </div>
             <div style="display:inline-block; width:49%;">
                 
-                <div align="center">
+                <div id="aifredText" align="center">
                     <img src="img/logo1.png" style="height:200px;width:auto"><br>
                 <h1 style="color:#4EC49F;">ai</h1><h1 style="color:white;">fred health</h1>
                 </div>
@@ -61,7 +65,7 @@
          <!-- General -->
         <div  id="general-page" style="display:none" class="modal">
             <p>  
-                <a class="closebtn" onclick="toggle_visibility('general-page'); toggle_visibility('nav-logo');">X</a><br>    
+                <a class="closebtn" onclick="toggle_visibility('general-page');">X</a><br>    
                 Depression is a serious mental illness that globally affects more than 300 million people over the course their lives<sup>1</sup>.
                 Some patients can spend years finding the right treatment regimen for them, and many patients won’t improve after the first treatment<sup>2</sup>. The inability to predict any given individual’s unique response to medical treatment is arguably one of the biggest bottlenecks to mental health recovery. <br><br>
                 This is where aifred comes in. The aifred solution will be a clinical software tool acting as a trusted advisor for healthcare professionals to optimize treatment quality and efficacy for mental health. This tool is a comprehensive, evidence-based decision aid for healthcare professionals to assist in rapidly selecting the most effective treatments for any given patient, as early on in their clinical course as possible, in order to reduce time to remission of symptoms as much as possible while minimizing burdensome side effects.
@@ -80,7 +84,7 @@
         <!-- Physician -->
     <div class="modal" id="physician-page" style="display:none">
             <p>
-                <a class="closebtn" onclick="toggle_visibility('physician-page'); toggle_visibility('nav-logo');">X</a><br>                        
+                <a class="closebtn" onclick="toggle_visibility('physician-page');">X</a><br>                        
                 Our tech team includes experienced machine learning engineers and researchers from McGill University and the Montreal Neurological Institute. We are constantly prototyping and refining newly published techniques to maintain state-of-the-art methods. By working closely with both the product and research teams, we are able to implement critical domain knowledge in order to ensure a well-integrated product.
                 <br><br>
                 <a href="general.html#link1">Find out more...</a>
@@ -92,7 +96,7 @@
     <!-- Researcher -->
     <div class="modal" id="researcher-page" style="display:none">
             <p>
-                <a class="closebtn" onclick="toggle_visibility('researcher-page'); toggle_visibility('nav-logo');">X</a><br>                        
+                <a class="closebtn" onclick="toggle_visibility('researcher-page');">X</a><br>                        
                 The aifred software solution will be available on a licensed basis to healthcare professionals. In addition to our predictive model, the product will contain an intuitive user interface with an integrated electronic health record.
                 <br><br>
                 <a href="general.html#link2">Find out more...</a>
@@ -104,7 +108,7 @@
         <!-- Investor -->
         <div class="modal" id="investor-page" style="display:none">
             <p>
-                <a class="closebtn" onclick="toggle_visibility('investor-page'); toggle_visibility('nav-logo');">X</a><br>                        
+                <a class="closebtn" onclick="toggle_visibility('investor-page');">X</a><br>                        
             
                 We are analyzing socio-demographic factors, symptom profiles, genetic, metabolic, endocrine, immune, and neuroimaging data. aifred will learn to predict the optimal treatment regimen for any given patient.                 
                 <br><br>
@@ -117,7 +121,7 @@
         <!-- Patient -->
         <div class="modal" id="patient-page" style="display:none">
             <p>
-                <a class="closebtn" onclick="toggle_visibility('patient-page'); toggle_visibility('nav-logo');">X</a><br>                        
+                <a class="closebtn" onclick="toggle_visibility('patient-page'); ">X</a><br>                        
           
 
                 While a range of effective treatments for depression do exist, these are not equivalently effective for all patients. Some patients can spend years finding the right combination of treatments from the dozens of medications, multiple psychotherapies, and five neurostimulation techniques available. 
@@ -130,19 +134,19 @@
         
         <!-- who are you buttons -->
     <div id="nav-buttons" >
-            <button class="btn btn-menu" id="btn-general" onclick="toggle_visibility('general-page'); toggle_visibility('nav-logo');">
+            <button class="btn btn-menu" id="btn-general" onclick="toggle_visibility('general-page');">
                 About Us
             </button>
-            <button class="btn btn-menu" id="btn-doctor" onclick="toggle_visibility('physician-page'); toggle_visibility('nav-logo');">
+            <button class="btn btn-menu" id="btn-doctor" onclick="toggle_visibility('physician-page'); ">
                 Technology
             </button>
-            <button class="btn btn-menu" id="btn-researcher" onclick="toggle_visibility('researcher-page'); toggle_visibility('nav-logo');">
+            <button class="btn btn-menu" id="btn-researcher" onclick="toggle_visibility('researcher-page');">
                 Product
             </button>
-            <button class="btn btn-menu" id="btn-investor" onclick="toggle_visibility('investor-page'); toggle_visibility('nav-logo');">
+            <button class="btn btn-menu" id="btn-investor" onclick="toggle_visibility('investor-page'); ">
                 Research
             </button>
-            <button class="btn btn-menu" id="btn-patient" onclick="toggle_visibility('patient-page'); toggle_visibility('nav-logo');">
+            <button class="btn btn-menu" id="btn-patient" onclick="toggle_visibility('patient-page');">
                 Clinical
             </button>
         </div>

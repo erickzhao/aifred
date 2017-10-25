@@ -64,12 +64,13 @@ canvas {
   height: 100%;
 }
 
+
 .nav-logo {
   z-index: 10;
   position: absolute;
   top: 5%;
   margin:auto;
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -114,7 +115,11 @@ canvas {
 	margin-top:15px;
 	display:inline-block;
 
-	}
+  }
+
+  .smallScreen {
+    display:none;
+  }
 
 @media (max-width: 768px) {
   #nav-page #nav-buttons {
@@ -124,7 +129,7 @@ canvas {
   }
   #nav-page #nav-logo {
     top: -0%;
-    height: 50%;
+    height: 30%;
     z-index: 10;
     position: absolute;
     top: 5%;
@@ -134,12 +139,26 @@ canvas {
     align-items: center;
     justify-content: space-around;
   }
-  #nav-logo img {
-    width: 200px;
-    height: 200px;
+  #aifredText img {
+    display:none;
+  }
+  #aifredText {
+    display:none;
   }
  h2 {
   display:none;
+ }
+ .smallScreen {
+   display:block;
+   height:100px;
+ }
+ .smallScreen img {
+  height:100px;
+  width:auto;
+  margin-left:30%;
+}
+ .btn {
+  width:400px;
  }
 }
 
@@ -186,13 +205,7 @@ h1 {
   display:inline-block;
 }
 
-h2 {
-  font-size: 12;
-  color:#ccc;
-  letter-spacing:2px;
-  font-weight:500;
-  text-align:left;
-}
+
 
 .btn.btn-menu {
   background: #354254;
