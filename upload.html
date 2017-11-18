@@ -1,0 +1,175 @@
+<!-- UPLOAD -->
+
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <title>aifred health</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+     
+        <!-- Custom Google Web Font -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+        
+        <!-- Custom CSS-->
+        <link href="css/general.css" rel="stylesheet">
+    
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="css/magnific-popup.css"> 
+        
+        <script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+        <!--[if IE 9]>
+            <script src="js/PIE_IE9.js"></script>
+        <![endif]-->
+        <!--[if lt IE 9]>
+            <script src="js/PIE_IE678.js"></script>
+        <![endif]-->
+    
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <link rel="icon" href="img/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="assets/pages.css">
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-99842842-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+    <script type="text/javascript">
+        function toggle_visibility(id) {
+           var e = document.getElementById(id);
+           if(e.style.display == 'block')
+              e.style.display = 'none';
+           else
+              e.style.display = 'block';
+        }
+    </script>
+</head>
+
+    
+<body>
+        <canvas width="1280px" height="100%" style="z-index: -1;position:absolute;"></canvas> 
+        
+        <div class="uploadpage">
+                <form id="upload_form" enctype="multipart/form-data" method="post">
+                    <input type="file" name="file1" id="file1" onchange="uploadFile()"><br>
+                    <progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+                    <h3 id="status"></h3>
+                    <p id="loaded_n_total"></p>
+                  </form>
+
+                <h3 class="section-heading" align="center">Data Upload Page</h3>
+                <br>
+        </div>
+
+       
+
+<!-- JavaScript -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/script.js"></script>
+<!-- StikyMenu -->
+<script src="js/stickUp.min.js"></script>
+<script type="text/javascript">
+  jQuery(function($) {
+    $(document).ready( function() {
+      $('.navbar-default').stickUp();
+      
+    });
+  });
+
+</script>
+<!-- Smoothscroll -->
+<script type="text/javascript" src="js/jquery.corner.js"></script> 
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<script src="js/classie.js"></script>
+<script src="js/uiMorphingButton_inflow.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.js"></script> 
+
+
+
+<script src="scripts/modal.js"></script>
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts/nodes.js"></script>
+    <script src="scripts/transition.js"></script>
+    <SCRIPT>
+            function passWord() {
+            var testV = 1;
+            var pass1 = prompt('Please enter your access key',' ');
+            while (testV < 3) {
+            if (pass1.toLowerCase() == "letmein") {
+            alert('Access Granted');
+            window.open('upload.html');
+            break;
+            } 
+            testV+=1;
+            var pass1 = 
+            prompt('Access Denied - Access Key Incorrect, Please Try Again.','Access Key');
+            }
+            if (pass1.toLowerCase()!="password" & testV ==3) 
+            
+            return " ";
+            } 
+            </SCRIPT>
+    <script>
+    function _(el) {
+  return document.getElementById(el);
+}
+
+function uploadFile() {
+  var file = _("file1").files[0];
+  // alert(file.name+" | "+file.size+" | "+file.type);
+  var formdata = new FormData();
+  formdata.append("file1", file);
+  var ajax = new XMLHttpRequest();
+  ajax.upload.addEventListener("progress", progressHandler, false);
+  ajax.addEventListener("load", completeHandler, false);
+  ajax.addEventListener("error", errorHandler, false);
+  ajax.addEventListener("abort", abortHandler, false);
+  ajax.open("POST", "file_upload_parser.php"); // http://www.developphp.com/video/JavaScript/File-Upload-Progress-Bar-Meter-Tutorial-Ajax-PHP
+  //use file_upload_parser.php from above url
+  ajax.send(formdata);
+}
+
+function progressHandler(event) {
+  _("loaded_n_total").innerHTML = "Uploaded " + event.loaded + " bytes of " + event.total;
+  var percent = (event.loaded / event.total) * 100;
+  _("progressBar").value = Math.round(percent);
+  _("status").innerHTML = Math.round(percent) + "% uploaded... please wait";
+}
+
+function completeHandler(event) {
+  _("status").innerHTML = event.target.responseText;
+  _("progressBar").value = 0; //wil clear progress bar after successful upload
+}
+
+function errorHandler(event) {
+  _("status").innerHTML = "Upload Failed";
+}
+
+function abortHandler(event) {
+  _("status").innerHTML = "Upload Aborted";
+}
+</script>
+<!-- END JAVASCRIPT -->
+	 </body>
+	 </html>
+
