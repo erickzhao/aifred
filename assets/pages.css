@@ -127,7 +127,8 @@ h6 {
 .idphoto {
 	border-radius:90px;
 	width:50px;
-	height:50px;
+  height:50px;
+  margin-top:-30px;
 	}
 .idphotoright {
 	display:inline-block; 
@@ -156,8 +157,9 @@ h6 {
 	width:47px;
 	margin-top:-30px;
 	margin-left:10px;
-	margin-right:10px;
-	cursor:pointer;
+  margin-right:10px;
+  cursor:pointer;
+  float:right;
 	}
 	
 	
@@ -173,7 +175,8 @@ h6 {
 	margin-bottom:15px;
 	display:inline-block;
 	align-content: center;
-	vertical-align: top;
+  vertical-align: top;
+  margin-top:50px;
 }
 
 .modal {
@@ -233,6 +236,13 @@ h2 {
   font-weight:400;
 	text-align:left;
 	font-size:3.5em;
+}
+h6  {
+  font-size: 12;
+  color:white;
+  letter-spacing:2px;
+  font-weight:400;
+  font-size:3.5em;
 }
 
 #intro-page h1 {
@@ -396,12 +406,12 @@ canvas {
  }
  .smallScreen {
    display:block;
-   height:100px;
+   height:200px;
  }
  .smallScreen img {
   height:100px;
   width:auto;
-  margin-left:30%;
+
 }
  .btn {
   width:400px;
@@ -475,7 +485,7 @@ h1 {
 }
 
 .navbar-default {
-  background:transparent;
+  background:#354254;
 	top:0;
 	height:10px;
 }
@@ -584,20 +594,19 @@ h1 {
 }
 
 .menuItem {
-	color:white;
+  color:white;
 }
 .menuItem:hover {
-	border-bottom: 2px solid #4EC49F;
+  color: #4EC49F;
+
 }
 
 .explore {
-  position: absolute;
-  bottom:10%;
-  right:49%;
+  bottom:8%;
   border: 1px solid white;
   background: none;
   color:white;
-  width:100px;
+  width:150px;
   height:50px;
   border-radius: 60px;
 }
@@ -629,4 +638,39 @@ h1 {
   left:10%;
   border-radius: 30px;
   text-align: center;
+}
+
+.readmore {
+  border:solid 2px white;
+}
+
+.readmore:hover {
+  border:dashed 2px black;
+  cursor:pointer
+}
+
+.meetTeam {
+  background:#4EC49F;
+  color:#354254;
+  margin-top:20px;
+  height:60px;
+}
+
+.meetTeam:hover {
+  background:#43A687;
+
+}
+
+
+
+.teampage {
+  background:rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top:5%;
+  bottom:5%;
+  right:5%;
+  left:5%;
+  border-radius: 20px;
+  text-align: center;
+  overflow:scroll;
 }

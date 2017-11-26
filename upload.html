@@ -10,7 +10,8 @@
     
         <title>aifred health</title>
         <link href="css/bootstrap.css" rel="stylesheet">
-     
+        <link href="css/upload.scss" rel="stylesheet">
+        
         <!-- Custom Google Web Font -->
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
@@ -18,7 +19,6 @@
         
         <!-- Custom CSS-->
         <link href="css/general.css" rel="stylesheet">
-    
         <!-- Magnific Popup core CSS file -->
         <link rel="stylesheet" href="css/magnific-popup.css"> 
         
@@ -55,6 +55,7 @@
               e.style.display = 'block';
         }
     </script>
+    <script src="scripts/upload.js"></script>
 </head>
 
     
@@ -62,17 +63,29 @@
         <canvas width="1280px" height="100%" style="z-index: -1;position:absolute;"></canvas> 
         
         <div class="uploadpage">
-                <form id="upload_form" enctype="multipart/form-data" method="post">
-                    <input type="file" name="file1" id="file1" onchange="uploadFile()"><br>
-                    <progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
-                    <h3 id="status"></h3>
-                    <p id="loaded_n_total"></p>
-                  </form>
+                <div class="container">
+						
+						<div class="row">
+							
+            <h3 class="section-heading" align="center">Click Below to Upload a File</h3>
+           
+            
+              <form method="post" class="file-uploader" action="upload.php" enctype="multipart/form-data">
+                <div class="file-uploader__message-area">
+                  <p>Select a file to upload</p>
+                </div>
+                <div class="file-chooser">
+                  <input class="file-chooser__input" type="file" >Choose a file</input>
+                </div>
+                <input class="file-uploader__submit-button" type="submit" value="Upload">
+              </form>
+          
+                        </div>
+                    </div>
+                </div>
+  
 
-                <h3 class="section-heading" align="center">Data Upload Page</h3>
-                <br>
-        </div>
-
+       
        
 
 <!-- JavaScript -->
@@ -129,46 +142,43 @@
             return " ";
             } 
             </SCRIPT>
-    <script>
-    function _(el) {
-  return document.getElementById(el);
-}
-
-function uploadFile() {
-  var file = _("file1").files[0];
-  // alert(file.name+" | "+file.size+" | "+file.type);
-  var formdata = new FormData();
-  formdata.append("file1", file);
-  var ajax = new XMLHttpRequest();
-  ajax.upload.addEventListener("progress", progressHandler, false);
-  ajax.addEventListener("load", completeHandler, false);
-  ajax.addEventListener("error", errorHandler, false);
-  ajax.addEventListener("abort", abortHandler, false);
-  ajax.open("POST", "file_upload_parser.php"); // http://www.developphp.com/video/JavaScript/File-Upload-Progress-Bar-Meter-Tutorial-Ajax-PHP
-  //use file_upload_parser.php from above url
-  ajax.send(formdata);
-}
-
-function progressHandler(event) {
-  _("loaded_n_total").innerHTML = "Uploaded " + event.loaded + " bytes of " + event.total;
-  var percent = (event.loaded / event.total) * 100;
-  _("progressBar").value = Math.round(percent);
-  _("status").innerHTML = Math.round(percent) + "% uploaded... please wait";
-}
-
-function completeHandler(event) {
-  _("status").innerHTML = event.target.responseText;
-  _("progressBar").value = 0; //wil clear progress bar after successful upload
-}
-
-function errorHandler(event) {
-  _("status").innerHTML = "Upload Failed";
-}
-
-function abortHandler(event) {
-  _("status").innerHTML = "Upload Aborted";
-}
-</script>
+   
+  
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+   <script src="http://malsup.github.com/jquery.form.js"></script>
+   <script>
+   (function() {
+       
+   var bar = $('.bar');
+   var percent = $('.percent');
+   var status = $('#status');
+      
+   $('form').ajaxForm({
+       beforeSend: function() {
+           status.empty();
+           var percentVal = '0%';
+           bar.width(percentVal)
+           percent.html(percentVal);
+       },
+       uploadProgress: function(event, position, total, percentComplete) {
+           var percentVal = percentComplete + '%';
+           bar.width(percentVal)
+           percent.html(percentVal);
+       //console.log(percentVal, position, total);
+       },
+       success: function() {
+           var percentVal = '100%';
+           bar.width(percentVal)
+           percent.html(percentVal);
+       },
+     complete: function(xhr) {
+       status.html(xhr.responseText);
+     }
+   }); 
+   
+   })();       
+   </script>
+ 
 <!-- END JAVASCRIPT -->
 	 </body>
 	 </html>
