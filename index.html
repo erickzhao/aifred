@@ -45,7 +45,7 @@
 	 <![endif]-->
 	 <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 	 <link rel="icon" href="img/logo.png" type="image/x-icon">
-	 <link rel="stylesheet" href="assets/pages.css">
+	 <link rel="stylesheet" href="assets/pages.min.css">
 	 <script>
    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -64,7 +64,7 @@
 	<!-- NavBar-->
 	<nav class="navbar-default" role="navigation" >
 		<div class="container">
-				<div class="navbar-header">
+				<div class="navbar-header" >
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" >
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
@@ -101,7 +101,10 @@
 		<div class="nav-logo" id="nav-logo" style="margin-top:50px;height:100%">
                 <div class="smallScreen" align="center">
                         <img src="img/logo1.png"><br>                        
-                        <h1 style="color:#4EC49F;">ai</h1><h1 style="color:white;">fred health</h1>
+						<h1 style="color:#4EC49F;">ai</h1><h1 style="color:white;">fred health</h1>
+						<h3 style="color:white;font-weight:200;">
+								Using machine learning to increase treatment efficacy in mental health.
+								</h3>
                     </div>
             <div style="display:inline-block; width:59%;">
                 
@@ -116,7 +119,7 @@
 			</h2>
 				
 			</div>
-			<div align="center">
+			<div align="center" style="margin-top:50px">
 			<a href="#upload"><button class="explore">Data Upload</button></a></div>
         </div>
 	
@@ -126,10 +129,10 @@
 				<div class="row">
 					<h3 class="section-heading" align="center">Are you a Researcher?</h3>
 					<h4 align="center">Would you like to share your data with us?</h4>
-					<h4 align="center"><a style="cursor:pointer" href="#contact">Send us a Message</a></h4>
+					<h4 align="center"><a class="databutton" style="cursor:pointer" href="#contact">Send us a Message</a></h4>
 					<br>
 					<h4 align="center">If you already have an access key:</h4>
-					<h4 align="center"><a style="cursor:pointer" href="notfound.html">Upload your Data!</a></h4>
+					<h4 align="center"><a class="databutton" style="cursor:pointer" href="notfound.html">Upload your Data!</a></h4>
 					
 				</div>
 			</div>
@@ -252,6 +255,10 @@ Our tech team includes experienced machine learning engineers and researchers fr
 							
 
 							To identify an optimal profile of predictive biomarkers, we are reviewing the status of precision psychiatry in a variety of domains including genetics, endocrinology, immunology, metabolic biochemistry, and neuroimaging. This biological information combined with sociodemographic and clinical factors will yield insight on how to best implement the aifred solution.
+							<br><br>
+							The aifred solution is a clinical decision tool designed to help physicians create personalized treatment plans for their patients, with the goal of reducing time to remission while minimizing adverse side effects. Our research team is conducting a series of systematic literature reviews on predictors of treatment response and side effect burden in depression. The results of these reviews will serve to inform a priori hypotheses for our machine learning model and will also help us to assess which biomarker tests can be most easily implemented into routine clinical practice. The knowledge extracted from parsing relevant scientific literature will serve to validate the relationships outputted by our model.
+							<br><br>
+							Another important aspect of the Research Team is maintaining strong relationships with our many clinical advisors. These advisors will also be helping us select features that should be included in the model. 
 							
 					</p>
 				</div>           
@@ -280,14 +287,14 @@ Our tech team includes experienced machine learning engineers and researchers fr
 							<br><br>
 							Clinical research is focused on validating our model in controlled and real-world conditions. We are designing three kinds of research trials: 
 							<ul>
-							<li><strong>Ease-of-use</strong>: The model must be user-friendly and provide clinicians with features they want and need, so we must study the aifred solution’s integration into clinical workflow and any effects on clinician efficiency and doctor-patient interaction. 
-							</li><li><strong>Open label trials</strong>: Safety and effectiveness of the model must be assessed in open-label trials where both clinicians and patients know when our model is being used. A group of physicians using our model will be compared to a group practicing usual care, and patient outcomes will be compared between the two. 
-							</li><li><strong>Randomized control trial</strong>: After open label studies, we will conduct one or more randomized control trials, testing our model against a “dummy” model and against a “practice as usual” group. This will help us determine how efficacious the aifred solution is. 
+							<li><p class="lead"><strong>Ease-of-use</strong>: The model must be user-friendly and provide clinicians with features they want and need, so we must study the aifred solution’s integration into clinical workflow and any effects on clinician efficiency and doctor-patient interaction. 
+							</li><li><p class="lead"><strong>Open label trials</strong>: Safety and effectiveness of the model must be assessed in open-label trials where both clinicians and patients know when our model is being used. A group of physicians using our model will be compared to a group practicing usual care, and patient outcomes will be compared between the two. 
+							</li><li><p class="lead"><strong>Randomized control trial</strong>: After open label studies, we will conduct one or more randomized control trials, testing our model against a “dummy” model and against a “practice as usual” group. This will help us determine how efficacious the aifred solution is. 
 							</li>
 							</ul>
 							
-							<br>
-							Safety is critical, so our clinical team, which includes two physicians, will be making sure to review our model’s predictions and ensure hard-coded safety features so that model treatment recommendations are safe. 
+						
+							<p class="lead">Safety is critical, so our clinical team, which includes two physicians, will be making sure to review our model’s predictions and ensure hard-coded safety features so that model treatment recommendations are safe. 
 							<br><br>
 							We are blazing the trail when it comes to clinical validation of deep-learning based clinical decision aids, and as such are investing heavily in the development of ethical principles to guide development and testing. In fact ethical development is so important to us that we have created our own ethical framework, known as Meticulous Transparency, to guide our work. We also never store identifiable patient information, to protect patient privacy. Contact us to find out more!  
 					</p>
@@ -326,6 +333,8 @@ Our tech team includes experienced machine learning engineers and researchers fr
 					Dr. Simon Ducharme, MD, MSc, FRCPC - Neuroimaging Content Expert
 					<br>
 					Dr. Marcelo Berlim, MD, MSc - Literature Review and Neuromodulation Content Expert
+					<br>
+					Dr. Howard Margolese, MD - Clinical Trial Expert
 					</p>
 						</div>
 
@@ -373,7 +382,9 @@ Our tech team includes experienced machine learning engineers and researchers fr
 						</div>	
 					<div align="center">
 					<img class="pad" src="img/mental.png" width="150" height="150">
+					<img class="pad" src="img/B21.png" height="100">
 					<img class="pad" src="img/steinberg.png" width="166.5" height="150">
+					<img class="pad" src="img/xprize.png" height="100">
 					<br>
 					<img class="pad" src="img/district3.png" width="299" height="156">
 					<img class="pad" src="img/elementai.png" width="200" height="63">

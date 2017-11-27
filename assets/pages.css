@@ -42,8 +42,6 @@
 .gen {
 	margin-top:100px;
 	}
-
-
 }
 .pad {
 	margin-right:50px;
@@ -407,15 +405,18 @@ canvas {
  .smallScreen {
    display:block;
    height:200px;
+   margin-top:80px;
  }
  .smallScreen img {
   height:100px;
   width:auto;
 
+
 }
  .btn {
   width:400px;
  }
+
 }
 
 
@@ -486,8 +487,7 @@ h1 {
 
 .navbar-default {
   background:#354254;
-	top:0;
-	height:10px;
+  top:10;
 }
 
 
@@ -613,6 +613,8 @@ h1 {
 .explore:hover {
   background:white;
   color:black;
+  transition-duration: 0.3s
+  
 }
 .upload {
   position: relative;
@@ -645,8 +647,9 @@ h1 {
 }
 
 .readmore:hover {
-  border:dashed 2px black;
-  cursor:pointer
+  box-shadow: 0.7px 0.7px 2px 2px #354254;
+  cursor:pointer;
+  transition-duration: 0.3s
 }
 
 .meetTeam {
@@ -674,3 +677,8 @@ h1 {
   text-align: center;
   overflow:scroll;
 }
+
+.databutton:hover {
+  color:#43A687;
+}
+
